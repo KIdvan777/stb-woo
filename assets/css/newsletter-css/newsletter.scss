@@ -1,0 +1,41 @@
+/* NEWSLETTER */
+
+.newsletter{
+    margin-top: 20px;
+    background-color: #85C441;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.newsletter span{
+    font-size: 24px;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.newsletters_form input[type="text"]{
+    background-color: #85C441;
+    border:none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    margin-right: 10px;
+}
+
+.newsletters_form input[type="text"]::placeholder{
+    color:#fff;
+}
+
+.newsletters_form button{
+    background-color: #EBD02E;
+    border: none;
+    padding: 6px;
+    color: #666464;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+@import 'newsletter_media.scss';

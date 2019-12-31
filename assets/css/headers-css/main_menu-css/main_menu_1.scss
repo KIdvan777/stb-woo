@@ -1,0 +1,28 @@
+.main_menu{
+    margin-right: 15px;
+}
+
+.main_menu .menu_ul{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.main_menu .menu_ul li{
+    display: inline;
+    margin-left: 20px;
+    font-size: 16px;
+
+}
+
+.main_menu input{
+    width: 200px;
+    background-color: #fff;
+    border: none;
+}
+
+.main_menu button{
+    background-color: #85C441;
+    border: none;
+}
+
+@import 'main_menu_media/main_menu_media.scss';

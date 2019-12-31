@@ -1,0 +1,111 @@
+/* TOP HITS SECTION */
+
+.top_hits_heading{
+    margin-top: 20px;
+    background-color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.top_hits_variation ul>li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 2px 4px;
+    a{
+        text-decoration: none;
+        color: #666464;
+        &:hover{
+            color:$main_green;
+        }
+    }
+}
+
+.top_hits_variation {
+    .top_hits_arrow{
+        border: 1px solid #fff;
+        &:hover{
+            border: 1px solid $main_green;
+        }
+    }
+}
+
+.top_hits_line{
+    width: 100%;
+    height: 1px;
+    background-color: #E5E5E5;
+}
+
+.top_hits{
+    overflow: hidden;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom:20px;
+    .top_hits_item{
+        position: relative;
+        padding-bottom: 10px;
+        .top_hits_item_overlay{
+            display: none;
+            width: 100%;
+            height: 100%;
+
+            border:1px solid #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            .top_hits_item_overlay_link{
+                display: relative;
+                a{
+                    position: absolute;
+                    top: 50%;
+                    left:  50%;
+                    transform: translate(-50%, -50%);
+                    color: #fff;
+                    text-decoration: none;
+                    background-color: $main_green;
+                    padding: 2px 10px;
+                }
+
+            }
+        }
+        &:hover{
+            .top_hits_item_overlay{
+                display: block;
+                border: 1px solid #e5e5e5;
+            }
+        }
+    }
+}
+
+.top_hits_item_banner{
+    display: inline-block;
+    /* border: 1px solid #666464; */
+}
+
+.top_hits_item_banner img{
+    width: 85%;
+    /* border: 1px solid #666464; */
+}
+
+.top_hits_item__img{
+    height: 180px;
+    position: relative;
+}
+
+.top_hits_item img{
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.top_hits_item span{
+    font-size: 14px;
+    color: #666464;
+
+}
+
+@import 'top_hits_media.scss';

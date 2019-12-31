@@ -1,0 +1,51 @@
+.owl-theme{
+    .owl-nav{
+            margin-top: 0;
+            position: absolute;
+            top:50%;
+            left:0;
+            width: 100%;
+            padding: 20px;
+            button{
+                width: 50px;
+                height: 50px;
+                border: none;
+                i{
+                    display: block;
+                    font-size: 30px;
+                    color: #fff;
+                }
+            }
+            .owl-prev{
+                float: left;
+                opacity: 1;
+                &:hover{
+                    background:rgba(255, 255, 255, 0);
+                    border-radius: 50px;
+                    border:1px solid #fff;
+                }
+            }
+            .owl-next{
+                float: right;
+                opacity: 1;
+                &:hover{
+                    background:rgba(255, 255, 255, 0);
+                    border-radius: 50px;
+                    border:1px solid #fff;
+                }
+            }
+        }
+        // .owl-pagination{
+        //     position: absolute;
+        //     top:90%;
+        //     left: 0%;
+        //     width: 100%;
+        //     .owl-page{
+        //         span{
+        //             background: #fff;
+        //         }
+        //
+        //     }
+        // }
+
+}

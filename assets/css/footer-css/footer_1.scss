@@ -1,0 +1,44 @@
+/* FOOTER */
+
+footer{
+    margin-top: 20px;
+    background-color: #85C441;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer_items{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer_items{
+    ul{
+        li{
+            color: #fff;
+            list-style: none;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color:#fff;
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+.footer_item_social{
+    margin-left: auto;
+    margin-right: auto;
+    img{
+       margin-left: 10px;
+       margin-top: 10px;
+       &:hover{
+           transform: scale(1.2);
+       }
+   }
+}
+
+@import 'footer_media.scss';

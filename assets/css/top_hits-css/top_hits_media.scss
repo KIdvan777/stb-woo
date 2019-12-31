@@ -1,0 +1,138 @@
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (max-width: 991px) {
+    .top_hits_section{
+
+        .top_hits_heading{
+            align-items: center;
+        }
+
+        .top_hits_variation{
+            ul>li{
+                list-style: none;
+                display: inline-block;
+                padding: 10px;
+            }ul>li:hover{
+                background-color: $main_green;
+                color:#fff;
+            }
+        }
+
+        .top_hits_item{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-bottom: 20px;
+
+            .top_hits_item__span{
+                margin-top:20px;
+            }
+        }
+
+        .top_hits_item_banner{
+
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top_hits_section{
+
+        .top_hits_heading{
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            background-color: #fff;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .top_hits_variation{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .top_hits_arrow{
+                display: none;
+            }
+
+            ul>li{
+                list-style: none;
+                display: inline-block;
+                padding: 10px;
+
+            }ul>li:hover{
+                background-color: $main_green;
+                color:#fff;
+            }
+        }
+
+        .top_hits_item{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-bottom: 20px;
+
+            .top_hits_item__span{
+                margin-top:40px;
+            }
+        }
+
+        .top_hits_item_banner{
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .top_hits_section{
+
+        .top_hits{
+
+            .top_hits_item_banner {
+                img{
+                    width:50%;
+                    height: auto;
+                    position: relative;
+                }
+            }
+
+            .top_hits_item{
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                margin-bottom: 40px;
+
+                .top_hits_item__img{
+                    img{
+                        width:50%;
+                        height: auto;
+                    }
+                }
+
+                .top_hits_item__span{
+                    span{
+                        margin-top:60px;
+                        display: block;
+                        text-align: center;
+                        padding-left: 3rem;
+                        padding-right: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}

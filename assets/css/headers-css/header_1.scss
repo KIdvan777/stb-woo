@@ -1,0 +1,38 @@
+/* HEADER 1 */
+
+.header_1{
+    background-color: #85C441;
+    color: #fff;
+    .main_menu{
+        .menu_ul{
+            li{
+                a{
+                    color:#fff;
+                    text-decoration: none;
+                }a:hover{
+                    color:red;
+                }
+            }
+        }
+    }
+}
+
+.logo{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+@import "main_menu-css/main_menu_1.scss";
