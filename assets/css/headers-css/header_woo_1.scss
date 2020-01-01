@@ -7,7 +7,28 @@
         .top_header_woo_1_content{
             .top_header_woo_1_left_size_content{
                 div{
-                    margin-right: 10px;
+                    margin-right: 20px;
+                    span{
+                        font-size: 14px;
+                        text-align: center;
+                        margin-left: 5px;
+                    }
+                    i{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .top_header_woo_1_right_size_content{
+                div{
+                    
+                    span{
+                        font-size: 14px;
+                        text-align: center;
+                        margin-left: 5px;
+                    }
+                    i{
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -53,6 +74,26 @@
         .shop_icons{
             align-items: center;
             margin-right: 15px;
+            .shop_cart{
+                margin-left: 20px;
+
+                i{
+                    position: relative;
+                    span{
+                        width: 15px;
+                        height: 15px;
+                        background-color: #77AF3A;
+                        text-align: center;
+                        border-radius:50%;
+                        border:1px solid #fff;
+                        font-size: 14px;
+                        position: absolute;
+                        top:-60%;
+                        left: 40%;
+                    }
+                }
+
+            }
         }
         .logo{
             padding-top: 1rem;

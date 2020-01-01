@@ -17,16 +17,26 @@
                         <div class="top_header_woo_1_content flex space_between">
                             <div class="top_header_woo_1_left_size_content flex">
                                 <div class="email">
-                                    email
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
                                 </div>
                                 <div class="phone">
-                                    phone
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>Phone</span>
                                 </div>
                             </div>
                             <div class="top_header_woo_1_right_size_content flex">
                                 <div class="email">
-                                    language
+                                    <i class="fas fa-globe"></i>
+                                    <span>lang</span>
                                 </div>
+                                <!-- <div class="">
+                                    <form class="" action="index.html" method="post">
+                                        <select class="" name="">
+                                            <option value="">1</option>
+                                        </select>
+                                    </form>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -45,10 +55,15 @@
 
                         <div class="shop_icons flex">
                             <div class="login">
-                                <i class="fas fa-search"></i>
+                                <i class="fas fa-lock"></i>
                             </div>
-                            <div class="login">
-                                <i class="fas fa-search"></i>
+                            <div class="shop_cart">
+                                <i class="fas fa-shopping-cart">
+                                    <span class"shop_cart_circle">
+                                        0
+                                    </span>
+                                </i>
+
                             </div>
                         </div>
                         <div class="burger">
