@@ -7,7 +7,7 @@
  * @package stb
  */
 
-get_header();
+get_template_part('template-parts/template-headers/headers');
 ?>
 
 	<section id="primary" class="content-area">

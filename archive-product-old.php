@@ -30,14 +30,7 @@ if($_GET['power'] && !empty($_GET['power']))
 									$args = array(
 										'post_type' => 'product',
 										'posts_per_page' => -1,
-										'meta_query' => array(
-											 array(
-												'key' => 'power',
-												'value' => $power,
-												'compare' => '='
-											),
-										
-										)
+
 									);
 									$query = new WP_Query($args);
 									while($query -> have_posts()) : $query -> the_post();
@@ -66,7 +59,7 @@ if($_GET['power'] && !empty($_GET['power']))
 				</div>
 			</div>
 			<div class="col-lg-4">
-					<?php get_template_part('template-parts/filter/filter-simple'); ?>
+					<?php get_sidebar();?>
 			</div>
 		</div>
 	</div>

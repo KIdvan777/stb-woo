@@ -1,0 +1,100 @@
+/* HEADER 1 */
+
+.header_woo_1{
+    .top_header_woo_1{
+        background-color: #77AF3A;
+            color: #fff;
+        .top_header_woo_1_content{
+            .top_header_woo_1_left_size_content{
+                div{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .middle_header_woo_1{
+        background-color: $main_green;
+        color:#fff;
+        .searchform_header_woo_1{
+            align-items: center;
+            width: 50%;
+            form{
+                width: 100%;
+            }
+            .search_container{
+                width: 100%;
+                position: relative;
+                .search_input{
+                    display: block;
+                    width: 100%;
+                    background-color: #86C989;
+                    border:none;
+                    color:#fff;
+                    &::-webkit-input-placeholder { /* Edge */
+                      color: #fff;
+                    }
+                    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                      color: #fff;
+                    }
+                    &::placeholder {
+                      color: #fff;
+                    }
+                }button{
+                    position: absolute;
+                    top:0;
+                    left:90%;
+                    width: 10%;
+                    background-color: #fff;
+                    border:none;
+                    height:100%;
+                }
+            }
+        }
+        .shop_icons{
+            align-items: center;
+            margin-right: 15px;
+        }
+        .logo{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-left: 15px;
+        }
+    }
+    .bottom_header_woo_1{
+        background-color: #fff;
+        .main_menu_header_woo_1{
+            .main_menu{
+                .menu_ul{
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    li{
+                        a{
+                            color:$main_text;
+                            text-decoration: none;
+                            font-size: 14px;;
+                        }a:hover{
+                            color:red;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+@import "main_menu-css/main_menu_1.scss";

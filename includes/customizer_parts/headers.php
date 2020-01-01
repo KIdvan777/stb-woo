@@ -22,7 +22,8 @@ $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'stb_social
             'choices'        => array(
                 'header 1'   => __( 'header 1' ),
                 'header 2'  => __( 'header 2' ),
-                'header 3'  => __( 'header 3' )
+                'header 3'  => __( 'header 3' ),
+                'header 4'  => __( 'header 4' )
             )
         )
     )
