@@ -12,7 +12,7 @@
  * @package stb
  */
 
- get_template_part('template-parts/template-headers/headers');
+get_template_part('template-parts/template-headers/headers');
 ?>
 <div class="container">
 	<div class="raw">

@@ -346,6 +346,7 @@ footer{margin-top:20px;background-color:#85c441;padding-top:20px;padding-bottom:
 .owl-theme .owl-nav .owl-prev:hover{background:rgba(255,255,255,0);border-radius:50px;border:1px solid #fff}
 .owl-theme .owl-nav .owl-next{float:right;opacity:1}
 .owl-theme .owl-nav .owl-next:hover{background:rgba(255,255,255,0);border-radius:50px;border:1px solid #fff}
+p{margin:0;padding:0}
 @media screen and (min-width:37.5em){.menu-toggle{display:none}
 .main-navigation ul{display:block}
 }@media screen and (min-width:768px){.burger{display:none}

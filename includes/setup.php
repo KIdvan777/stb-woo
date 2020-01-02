@@ -86,3 +86,8 @@ if ( ! function_exists( 'stb_setup' ) ) :
 		) );
 	}
 endif;
+
+function stb_add_woocommerce_support() {
+	add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'stb_add_woocommerce_support' );
