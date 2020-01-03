@@ -179,6 +179,7 @@ ul{padding:0;margin:0}
 .search_form_overlay_container_show{display:block;position:absolute;z-index:999;top:50%;left:50%;margin-right:-50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-color:#fff;opacity:95%;padding:100px;width:100%}
 .search_form_vissible_close_icon{position:relative}
 .search_form_vissible_close_icon i{color:#85c441;display:inline-block;font-size:26px;margin-left:50px;position:absolute;top:50%;left:50%;margin-right:-50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);cursor:pointer}
+.woocommerce .breadcrumbs_container .woocommerce-breadcrumb a{color:#ccc;text-decoration:none}
 .hero{margin-top:20px}
 .hero img{display:block;margin:auto}
 .hero_3 img{width:100%}
@@ -347,6 +348,8 @@ footer{margin-top:20px;background-color:#85c441;padding-top:20px;padding-bottom:
 .owl-theme .owl-nav .owl-next{float:right;opacity:1}
 .owl-theme .owl-nav .owl-next:hover{background:rgba(255,255,255,0);border-radius:50px;border:1px solid #fff}
 p{margin:0;padding:0}
+.woocommerce .content-area{margin-top:20px}
+.woocommerce .content-area .bgc_color{background-color:#fff}
 @media screen and (min-width:37.5em){.menu-toggle{display:none}
 .main-navigation ul{display:block}
 }@media screen and (min-width:768px){.burger{display:none}

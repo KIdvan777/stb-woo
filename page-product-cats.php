@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_template_part('template-parts/template-headers/headers'); ?>
 <section class="">
 <div class="container">
     <div class="row">
@@ -6,7 +6,7 @@
         <div class="top_hits col-md-12 flex">
 
             <div class=" product_cats col-md-8 flex">
-            <?php  $terms = get_terms('product-category');
+            <?php  $terms = get_terms('product_cat');
                 foreach( $terms as $term ){
                     $term_id = $term->term_id;
                     $image_id = get_term_meta( $term_id, '_thumbnail_id', 1 );
@@ -22,7 +22,7 @@
                 <?}?>
             </div>
             <div class="col-md-4">
-                <?php get_template_part('template-parts/filter/filter'); ?>
+                <?php get_sidebar()?>
             </div>
 
         </div>
