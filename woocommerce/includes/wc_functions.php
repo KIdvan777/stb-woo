@@ -40,3 +40,26 @@ function stb_single_product_wrapper_end(){
         </div>
     <?
 }
+remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10 );
+// add_action( 'woocommerce_before_single_product_summary', 'stb_single_show_product_images', 10 );
+
+
+
+remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );
+add_action( 'woocommerce_before_single_product_summary', 'stb_single_show_product_images', 20 );
+
+function stb_single_show_product_images(){
+	?>
+		<div class="col-md-6">
+			<?php woocommerce_show_product_images(); ?>
+		</div>
+	<?
+}
+
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+add_action('woocommerce_after_single_product', 'woocommerce_output_product_data_tabs', 10 );
+add_action('woocommerce_after_single_product', 'woocommerce_upsell_display', 15 );
+add_action('woocommerce_after_single_product', 'woocommerce_output_related_products', 20 );

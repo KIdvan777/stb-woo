@@ -4,5 +4,24 @@
         .bgc_color{
             background-color: #fff;
         }
+        .product{
+            display: flex;
+        }
+        .related {
+            .products {
+                display: flex;
+                li{
+                    display: block;
+                    width: 16.6666667%;
+                    padding: 10px;
+                    text-align: center;
+                    .woocommerce-LoopProduct-link{
+                        display: block;
+                        // max-width: 150px;
+
+                    }
+                }
+            }
+        }
     }
 }

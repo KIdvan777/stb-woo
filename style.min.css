@@ -350,6 +350,10 @@ footer{margin-top:20px;background-color:#85c441;padding-top:20px;padding-bottom:
 p{margin:0;padding:0}
 .woocommerce .content-area{margin-top:20px}
 .woocommerce .content-area .bgc_color{background-color:#fff}
+.woocommerce .content-area .product{display:-webkit-box;display:-ms-flexbox;display:flex}
+.woocommerce .content-area .related .products{display:-webkit-box;display:-ms-flexbox;display:flex}
+.woocommerce .content-area .related .products li{display:block;width:16.6666667%;padding:10px;text-align:center}
+.woocommerce .content-area .related .products li .woocommerce-LoopProduct-link{display:block}
 @media screen and (min-width:37.5em){.menu-toggle{display:none}
 .main-navigation ul{display:block}
 }@media screen and (min-width:768px){.burger{display:none}
