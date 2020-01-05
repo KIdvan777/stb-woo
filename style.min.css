@@ -348,12 +348,26 @@ footer{margin-top:20px;background-color:#85c441;padding-top:20px;padding-bottom:
 .owl-theme .owl-nav .owl-next{float:right;opacity:1}
 .owl-theme .owl-nav .owl-next:hover{background:rgba(255,255,255,0);border-radius:50px;border:1px solid #fff}
 p{margin:0;padding:0}
-.woocommerce .content-area{margin-top:20px}
 .woocommerce .content-area .bgc_color{background-color:#fff}
+.woocommerce .content-area .margin_top_20px{padding-top:20px;margin-top:20px}
 .woocommerce .content-area .product{display:-webkit-box;display:-ms-flexbox;display:flex}
+.woocommerce .content-area .product .reset_padding{padding:0}
+.woocommerce .content-area .product .summary h1{margin-top:0}
+.woocommerce .content-area .product .woocommerce-product-gallery .flex-viewport{position:relative}
+.woocommerce .content-area .product .woocommerce-product-gallery .woocommerce-product-gallery__trigger{position:absolute;top:5%;left:5%;z-index:99}
+.woocommerce .content-area .product .woocommerce-product-gallery .flex-control-nav{display:-webkit-box;display:-ms-flexbox;display:flex;margin:0;padding:0}
+.woocommerce .content-area .product .woocommerce-product-gallery .flex-control-nav li{list-style:none;padding:10px}
+.woocommerce .content-area .related{margin-top:20px}
 .woocommerce .content-area .related .products{display:-webkit-box;display:-ms-flexbox;display:flex}
 .woocommerce .content-area .related .products li{display:block;width:16.6666667%;padding:10px;text-align:center}
 .woocommerce .content-area .related .products li .woocommerce-LoopProduct-link{display:block}
+.woocommerce .content-area .woocommerce-tabs{margin-top:20px}
+.woocommerce .content-area .woocommerce-tabs .tabs{display:-webkit-box;display:-ms-flexbox;display:flex}
+.woocommerce .content-area .woocommerce-tabs .tabs li{list-style:none;padding:5px}
+.woocommerce .content-area .woocommerce-tabs .tabs li a{color:#666464;text-decoration:none}
+.woocommerce .content-area .woocommerce-tabs .tabs .active{background-color:#85c441}
+.woocommerce .content-area .woocommerce-tabs .tabs .active a{color:#fff;text-decoration:none}
+.woocommerce .content-area .woocommerce-tabs .woocommerce-Tabs-panel{padding-bottom:20px}
 @media screen and (min-width:37.5em){.menu-toggle{display:none}
 .main-navigation ul{display:block}
 }@media screen and (min-width:768px){.burger{display:none}

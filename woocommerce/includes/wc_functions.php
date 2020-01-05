@@ -22,7 +22,7 @@ function stb_single_product_wrapper_start(){
     ?>
         <div class="container bgc_color">
             <div class="raw">
-            	<div class="col-md-12">
+            	<div class="col-md-12 margin_top_20px">
             		<?php woocommerce_output_content_wrapper(); ?>
 
     <?
@@ -50,7 +50,7 @@ add_action( 'woocommerce_before_single_product_summary', 'stb_single_show_produc
 
 function stb_single_show_product_images(){
 	?>
-		<div class="col-md-6">
+		<div class="col-md-6 reset_padding">
 			<?php woocommerce_show_product_images(); ?>
 		</div>
 	<?
@@ -63,3 +63,5 @@ remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_r
 add_action('woocommerce_after_single_product', 'woocommerce_output_product_data_tabs', 10 );
 add_action('woocommerce_after_single_product', 'woocommerce_upsell_display', 15 );
 add_action('woocommerce_after_single_product', 'woocommerce_output_related_products', 20 );
+
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
