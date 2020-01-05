@@ -14,7 +14,7 @@
 
  get_template_part('template-parts/template-headers/headers');
 ?>
-<div class="container">
+<div class="container bgc_color">
 	<div class="raw">
 		<div class="col-md-12">
 			<div id="primary" class="content-area">

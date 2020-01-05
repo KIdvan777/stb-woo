@@ -122,6 +122,8 @@ img{max-width:100%;height:auto}
 ul{padding:0;margin:0}
 .flex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-flow:wrap;flex-flow:wrap}
 .space_between{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+.bgc_color{background-color:#fff}
+.margin_top_20px{padding-top:20px;margin-top:20px}
 .header_1{background-color:#85c441;color:#fff}
 .header_1 .main_menu .menu_ul li a{color:#fff;text-decoration:none}
 .header_1 .main_menu .menu_ul li a:hover{color:red}

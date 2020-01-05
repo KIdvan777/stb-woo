@@ -1,8 +1,17 @@
 <?php get_template_part('template-parts/template-headers/headers'); ?>
 <section class="">
-<div class="container">
+<div class="container ">
     <div class="row">
-        <?php get_template_part('template-parts/breadcrumbs/breadcrumbs_1'); ?>
+        <?php
+    		/**
+    		 * woocommerce_before_main_content hook.
+    		 *
+    		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+    		 * @hooked woocommerce_breadcrumb - 20
+    		 */
+    		do_action( 'woocommerce_before_main_content' );
+    	?>
+
         <div class="top_hits col-md-12 flex">
 
             <div class=" product_cats col-md-8 flex">
