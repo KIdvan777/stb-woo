@@ -27,7 +27,7 @@ jQuery(document).ready(function () {
     nav: true,
     navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
     dots: true,
-    autoplay: true
+    autoplay: false
   });
 });
 "use strict";

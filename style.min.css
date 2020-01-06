@@ -183,7 +183,13 @@ ul{padding:0;margin:0}
 .search_form_vissible_close_icon i{color:#85c441;display:inline-block;font-size:26px;margin-left:50px;position:absolute;top:50%;left:50%;margin-right:-50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);cursor:pointer}
 .woocommerce .breadcrumbs_container .woocommerce-breadcrumb a{color:#ccc;text-decoration:none}
 .hero{margin-top:20px}
-.hero img{display:block;margin:auto}
+.hero_background{width:100%;padding:20px;background:#ebe286;background:-webkit-gradient(linear,left bottom,left top,from(#ebe286),color-stop(37%,#f9fad7),to(white));background:linear-gradient(0,#ebe286 0,#f9fad7 37%,white 100%)}
+.hero_background .hero_img{width:50%}
+.hero_background .hero_img img{display:block;margin:auto;width:50%;height:auto}
+.hero_background .hero_content_wrapper{width:50%;position:relative}
+.hero_background .hero_content_wrapper .hero_content{position:absolute;width:100%;top:50%;left:25%;-webkit-transform:translate(0,-50%);transform:translate(0,-50%);z-index:999}
+.hero_background .hero_content_wrapper .hero_content span{display:block;width:100%;font-size:24px;font-weight:bold;color:#666464}
+.hero_background .hero_content_wrapper .hero_content .button{position:absolute;z-index:9999;margin-top:20px;background-color:#85c441;border:0;font-size:16px;font-weight:bold;color:#fff;text-decoration:none;padding:5px}
 .hero_3 img{width:100%}
 .product_menu{background-color:#fff;padding-top:10px;padding-bottom:10px}
 .product_menu .product_menu_item{display:inline-block}
