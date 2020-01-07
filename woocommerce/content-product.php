@@ -24,7 +24,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<li <?php wc_product_class( 'col-lg-2 col-md-4 col-sm-6', $product ); ?>>
+<li <?php wc_product_class( 'top_hits_item col-lg-2 col-md-4 col-sm-6', $product ); ?>>
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.

@@ -37,7 +37,7 @@
     height: 1px;
     background-color: #E5E5E5;
 }
-
+// TOp hits items scss
 .top_hits{
     overflow: hidden;
     background-color: #fff;
@@ -50,7 +50,6 @@
             display: none;
             width: 100%;
             height: 100%;
-
             border:1px solid #fff;
             position: absolute;
             top: 0;
@@ -105,6 +104,10 @@
 .top_hits_item span{
     font-size: 14px;
     color: #666464;
+    h2{
+        font-size: 14px;
+        color: #666464;
+    }
 
 }
 
