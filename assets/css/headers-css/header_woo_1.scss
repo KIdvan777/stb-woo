@@ -20,7 +20,7 @@
             }
             .top_header_woo_1_right_size_content{
                 div{
-                    
+
                     span{
                         font-size: 14px;
                         text-align: center;
@@ -36,6 +36,12 @@
     .middle_header_woo_1{
         background-color: $main_green;
         color:#fff;
+        .logo{
+            a{
+                text-decoration: none;
+                color:#fff;
+            }
+        }
         .searchform_header_woo_1{
             align-items: center;
             width: 50%;
@@ -79,6 +85,7 @@
 
                 i{
                     position: relative;
+                    color:#fff;
                     span{
                         width: 15px;
                         height: 15px;

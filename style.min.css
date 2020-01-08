@@ -151,6 +151,7 @@ ul{padding:0;margin:0}
 .header_woo_1 .top_header_woo_1 .top_header_woo_1_content .top_header_woo_1_right_size_content div span{font-size:14px;text-align:center;margin-left:5px}
 .header_woo_1 .top_header_woo_1 .top_header_woo_1_content .top_header_woo_1_right_size_content div i{font-size:14px}
 .header_woo_1 .middle_header_woo_1{background-color:#85c441;color:#fff}
+.header_woo_1 .middle_header_woo_1 .logo a{text-decoration:none;color:#fff}
 .header_woo_1 .middle_header_woo_1 .searchform_header_woo_1{-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:50%}
 .header_woo_1 .middle_header_woo_1 .searchform_header_woo_1 form{width:100%}
 .header_woo_1 .middle_header_woo_1 .searchform_header_woo_1 .search_container{width:100%;position:relative}
@@ -163,7 +164,7 @@ ul{padding:0;margin:0}
 .header_woo_1 .middle_header_woo_1 .searchform_header_woo_1 .search_container button{position:absolute;top:0;left:90%;width:10%;background-color:#fff;border:0;height:100%}
 .header_woo_1 .middle_header_woo_1 .shop_icons{-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-right:15px}
 .header_woo_1 .middle_header_woo_1 .shop_icons .shop_cart{margin-left:20px}
-.header_woo_1 .middle_header_woo_1 .shop_icons .shop_cart i{position:relative}
+.header_woo_1 .middle_header_woo_1 .shop_icons .shop_cart i{position:relative;color:#fff}
 .header_woo_1 .middle_header_woo_1 .shop_icons .shop_cart i span{width:15px;height:15px;background-color:#77af3a;text-align:center;border-radius:50%;border:1px solid #fff;font-size:14px;position:absolute;top:-60%;left:40%}
 .header_woo_1 .middle_header_woo_1 .logo{padding-top:1rem;padding-bottom:1rem;margin-left:15px}
 .header_woo_1 .bottom_header_woo_1{background-color:#fff}
@@ -192,7 +193,7 @@ ul{padding:0;margin:0}
 .hero_background .hero_content_wrapper .hero_content span{display:block;width:100%;font-size:24px;font-weight:bold;color:#666464}
 .hero_background .hero_content_wrapper .hero_content .button{position:absolute;z-index:9999;margin-top:20px;background-color:#85c441;border:0;font-size:16px;font-weight:bold;color:#fff;text-decoration:none;padding:5px}
 .hero_3 img{width:100%}
-.product_menu{background-color:#fff;padding-top:10px;padding-bottom:10px}
+.product_menu{background-color:#fff;padding-top:10px;padding-bottom:10px;margin-top:20px}
 .product_menu .product_menu_item{display:inline-block}
 .product_menu .product_menu_item a{text-decoration:none}
 .product_menu .product_menu_item:hover span{color:#85c441}
@@ -350,13 +351,17 @@ footer{margin-top:20px;background-color:#85c441;padding-top:20px;padding-bottom:
 .animated.slow{-webkit-animation-duration:2s;animation-duration:2s}
 .animated.slower{-webkit-animation-duration:3s;animation-duration:3s}
 .product_cats .product_cats_item{border:4px solid #e4e4e4;margin-left:4px;margin-bottom:4px}
-.owl-theme .owl-nav{margin-top:0;position:absolute;top:50%;left:0;width:100%;padding:20px}
+.owl-theme{position:relative}
+.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-theme .owl-dots .owl-dot:hover span{background:#85c441}
+.owl-theme .owl-nav{margin-top:0;position:absolute;top:40%;left:0;width:100%;padding:20px}
 .owl-theme .owl-nav button{width:50px;height:50px;border:0}
 .owl-theme .owl-nav button i{display:block;font-size:30px;color:#fff}
 .owl-theme .owl-nav .owl-prev{float:left;opacity:1}
 .owl-theme .owl-nav .owl-prev:hover{background:rgba(255,255,255,0);border-radius:50px;border:1px solid #fff}
 .owl-theme .owl-nav .owl-next{float:right;opacity:1}
 .owl-theme .owl-nav .owl-next:hover{background:rgba(255,255,255,0);border-radius:50px;border:1px solid #fff}
+.owl-theme .owl-dots{position:absolute;top:90%;left:0;width:100%}
+.owl-theme .owl-dots .owl-dot span{background:#fff}
 p{margin:0;padding:0}
 .woocommerce .content-area .bgc_color{background-color:#fff}
 .woocommerce .content-area .margin_top_20px{padding-top:20px;margin-top:20px}

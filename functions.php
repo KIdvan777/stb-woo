@@ -67,6 +67,6 @@ if ( class_exists( 'WooCommerce' ) ) {
 include( get_template_directory() . '/includes/theme-customizer.php');
 
 // Hooks
-add_action('customize_register', 'stb_theme_customize_register');
+
 
 // Actions

@@ -1,8 +1,14 @@
 <?php
 
-$wp_customize->add_panel('main_page_settings_panel', array(
+$wp_customize->add_panel('theme_slug_panel_general',
+array(
+    'priority' => 10,
+    'capability' => 'edit_theme_options',
+    'theme_supports' => '',
+    'title' => __('Theme STB General Settings', 'theme-slug'),
+    'description' => __('Configure general settings for the Theme Name Theme', 'theme-slug')
+));    
 
-));
 
 $wp_customize->add_setting('main_page_hero_choices_setting', array(
     'default' =>'',
@@ -11,7 +17,8 @@ $wp_customize->add_setting('main_page_hero_choices_setting', array(
 
 $wp_customize->add_section('main_page_hero_section', array(
     'title' => __('STB Hero', 'stb'),
-    'prioryty' => 35
+    'prioryty' => 35,
+    'panel'=>'theme_slug_panel_general'
 ));
 
 // Hero section Choices

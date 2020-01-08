@@ -1,8 +1,12 @@
 .owl-theme{
+    position: relative;
+    .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+        background: $main_green;
+    }
     .owl-nav{
             margin-top: 0;
             position: absolute;
-            top:50%;
+            top:40%;
             left:0;
             width: 100%;
             padding: 20px;
@@ -35,17 +39,16 @@
                 }
             }
         }
-        // .owl-pagination{
-        //     position: absolute;
-        //     top:90%;
-        //     left: 0%;
-        //     width: 100%;
-        //     .owl-page{
-        //         span{
-        //             background: #fff;
-        //         }
-        //
-        //     }
-        // }
+        .owl-dots{
+            position: absolute;
+            top:90%;
+            left: 0%;
+            width: 100%;
+            .owl-dot{
+                span{
+                    background: #fff;
+                }
+            }
 
+        }
 }

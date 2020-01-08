@@ -14,24 +14,51 @@
             <div class="container">
                 <div class="raw">
                     <div class="col-md-12">
-                        <div class="top_header_woo_1_content flex space_between">
-                            <div class="top_header_woo_1_left_size_content flex">
-                                <div class="email">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>Email</span>
+                        <?php
+                        if( get_theme_mod('stb_header_4_top_header_setting') == 'on' )
+                        {?>
+                            <div class="top_header_woo_1_content flex space_between">
+                                <div class="top_header_woo_1_left_size_content flex">
+                                    <div class="email">
+
+                                        <i class="fas fa-envelope"></i>
+                                        <span>
+                                            <?php
+                                            if( get_theme_mod('stb_header_4_email_settings') )
+                                            {
+                                                echo get_theme_mod('stb_header_4_email_settings');
+                                            }
+                                            else{
+                                                echo 'your email address';
+                                            }
+                                             ?>
+                                        </span>
+                                    </div>
+                                    <div class="phone">
+                                        <i class="fas fa-phone-alt"></i>
+                                        <span>
+                                            <?php
+                                            if( get_theme_mod('stb_header_4_phone_number_settings') )
+                                            {
+                                                echo get_theme_mod('stb_header_4_phone_number_settings');
+                                            }
+                                            else{
+                                                echo 'your phone number';
+                                            }
+                                             ?>
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="phone">
-                                    <i class="fas fa-phone-alt"></i>
-                                    <span>Phone</span>
+                                <div class="top_header_woo_1_right_size_content flex">
+                                    <div class="email">
+                                        <i class="fas fa-globe"></i>
+                                        <span>lang</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="top_header_woo_1_right_size_content flex">
-                                <div class="email">
-                                    <i class="fas fa-globe"></i>
-                                    <span>lang</span>
-                                </div>
-                            </div>
-                        </div>
+                        <?}
+                        ?>
+
                     </div>
                 </div>
             </div>
@@ -63,9 +90,9 @@
                                 <i class="fas fa-lock"></i>
                             </div>
                             <div class="shop_cart">
-                                
+
                                     <?php
-                                    	stb_woocommerce_cart_link();
+                                    	//stb_woocommerce_cart_link();
                                     ?>
 
                             </div>
