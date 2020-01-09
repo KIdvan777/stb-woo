@@ -15,3 +15,4 @@ include( get_template_directory() . '/includes/customizer_parts/headers-parts/he
 
 // BOTTOM HEADER
 include( get_template_directory() . '/includes/customizer_parts/headers-parts/header-parts_4/bottom-header/bottom_header.php' );
+include( get_template_directory() . '/includes/customizer_parts/headers-parts/header-parts_4/bottom-header/menu.php' );

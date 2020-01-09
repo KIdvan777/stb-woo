@@ -21,3 +21,20 @@ function stb_header_woo_1_top_header_css()
         }
     </style>
 <?}
+
+function change_menu_item_args( $args, $item, $depth ) {
+
+    $img = get_theme_mod('stb_headers_1_menu_submenu_setting');
+
+	if ( $depth === 1) {
+		$args->before = '<a href="#"><img src="'. $img .'"/></a>';
+		$args->after = '<span>line</span>';
+	}else{
+        $args->before = '';
+		$args->after = '';
+    }
+	return $args;
+
+
+}
+add_filter( 'nav_menu_item_args', 'change_menu_item_args', 10, 3 );
