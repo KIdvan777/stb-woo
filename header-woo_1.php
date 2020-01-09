@@ -35,7 +35,15 @@
                                         </span>
                                     </div>
                                     <div class="phone">
-                                        <i class="fas fa-phone-alt"></i>
+                                        <?php
+                                        if( get_theme_mod('stb_header_4_phone_icon_settings') ){
+                                            echo get_theme_mod('stb_header_4_phone_icon_settings');
+                                        }else{
+                                            ?>
+                                                <i class="fas fa-phone-alt"></i>
+                                            <?
+                                        }
+                                        ?>
                                         <span>
                                             <?php
                                             if( get_theme_mod('stb_header_4_phone_number_settings') )
@@ -63,6 +71,7 @@
                 </div>
             </div>
         </div>
+        <!-- MIDDLE HEADER -->
         <div class="middle_header_woo_1">
             <div class="container ">
                 <div class="row">
@@ -84,17 +93,15 @@
                         </div>
                         <!-- End Logo -->
                             <?php get_search_form(); ?>
-
                         <div class="shop_icons flex">
                             <div class="login">
                                 <i class="fas fa-lock"></i>
                             </div>
+                            <!-- Function that displays cart link -->
                             <div class="shop_cart">
-
-                                    <?php
-                                    	//stb_woocommerce_cart_link();
-                                    ?>
-
+                                <?php
+                                	stb_woocommerce_cart_link();
+                                ?>
                             </div>
                         </div>
                         <div class="burger">

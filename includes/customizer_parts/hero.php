@@ -5,7 +5,7 @@ array(
     'priority' => 10,
     'capability' => 'edit_theme_options',
     'theme_supports' => '',
-    'title' => __('Theme STB General Settings', 'theme-slug'),
+    'title' => __('Hero Section Settings', 'stb'),
     'description' => __('Configure general settings for the Theme Name Theme', 'theme-slug')
 ));    
 
