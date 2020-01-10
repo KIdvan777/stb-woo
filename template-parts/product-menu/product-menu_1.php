@@ -15,7 +15,15 @@
                                          ?>
                                             <div class="product_menu_item col-md-2">
                                                <a href="<?php echo get_term_link( $term ); ?>">
-                                                   <?php echo '<img src="'. $image_url .'" alt="" />'; ?><span><?php echo $term->name ?></span>
+                                                    <?php
+                                                       if($image_url):
+                                                           echo '<img src="'. $image_url .'" alt="" />';
+                                                        else:
+                                                            echo '<img src="//localhost:3000/wp-content/uploads/2019/12/album-1.jpg" alt="" />';
+                                                        endif;
+                                                    ?>
+                                                    <span><?php echo $term->name ?></span>
+
                                                </a>
                                            </div>
                                 <?}

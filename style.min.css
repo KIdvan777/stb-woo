@@ -169,13 +169,14 @@ ul{padding:0;margin:0}
 .header_woo_1 .middle_header_woo_1 .logo{padding-top:1rem;padding-bottom:1rem;margin-left:15px}
 .header_woo_1 .bottom_header_woo_1{background-color:#fff}
 .header_woo_1 .bottom_header_woo_1 .main_menu_header_woo_1 .main_menu .menu_ul{padding-top:10px;padding-bottom:10px}
-.header_woo_1 .bottom_header_woo_1 .main_menu_header_woo_1 .main_menu .menu_ul .menu-item{padding-top:10px;padding-bottom:10px;margin-left:15px;height:100%}
+.header_woo_1 .bottom_header_woo_1 .main_menu_header_woo_1 .main_menu .menu_ul .menu-item{padding-top:10px;padding-bottom:10px;margin-left:15px}
 .header_woo_1 .bottom_header_woo_1 .main_menu_header_woo_1 .main_menu .menu_ul .menu-item a{color:#666464;text-decoration:none;font-size:14px;height:100%}
 .header_woo_1 .bottom_header_woo_1 .main_menu_header_woo_1 .main_menu .menu_ul .menu-item a:hover{color:red}
-.header_woo_1 .bottom_header_woo_1 .main_menu_header_woo_1 .main_menu .menu_ul .menu-item .sub-menu{display:none}
-.header_woo_1 .bottom_header_woo_1 .main_menu_header_woo_1 .main_menu .menu_ul .menu-item .sub-menu .menu-item{width:100%}
+.header_woo_1 .bottom_header_woo_1 .main_menu_header_woo_1 .main_menu .menu_ul .menu-item .sub-menu{display:none;padding:20px}
 .header_woo_1 .bottom_header_woo_1 .main_menu_header_woo_1 .main_menu .menu_ul .menu-item:hover .sub-menu{display:-webkit-box;display:-ms-flexbox;display:flex;margin:0;background-color:#fff;position:absolute;left:0;z-index:999}
-.header_woo_1 .bottom_header_woo_1 .main_menu_header_woo_1 .main_menu .menu_ul .menu-item:hover .sub-menu .menu-item{width:20%;display:inline}
+.header_woo_1 .bottom_header_woo_1 .main_menu_header_woo_1 .main_menu .menu_ul .menu-item:hover .sub-menu .menu-item{width:20%;border:1px solid #ccc}
+.header_woo_1 .bottom_header_woo_1 .main_menu_header_woo_1 .main_menu .menu_ul .menu-item:hover .sub-menu .menu-item a{display:block;padding:10px;text-align:center}
+.header_woo_1 .bottom_header_woo_1 .main_menu_header_woo_1 .main_menu .menu_ul .menu-item:hover .sub-menu .menu-item a span{display:block;padding:0;text-align:center;margin-top:20px}
 .main_menu{margin-right:15px}
 .main_menu .menu_ul{padding-top:1rem;padding-bottom:1rem}
 .main_menu .menu_ul li{display:inline;margin-left:20px;font-size:16px}

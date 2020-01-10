@@ -119,7 +119,6 @@
                         padding-top: 10px;
                         padding-bottom: 10px;
                         margin-left: 15px;
-                        height: 100%;
                         a{
                             color:$main_text;
                             text-decoration: none;
@@ -131,18 +130,7 @@
                         }
                         .sub-menu{
                             display: none;
-                            // margin: 0;
-                            // background-color: #fff;
-                            // position: absolute;
-                            // left: 0;
-                            // z-index: 999;
-                            .menu-item{
-                                width: 100%;
-                                a{
-                                    img{
-                                    }
-                                }
-                            }
+                            padding: 20px;
                         }
                         &:hover{
                             .sub-menu{
@@ -154,9 +142,20 @@
                                 z-index: 999;
                                 .menu-item{
                                     width: 20%;
-                                    display: inline;
-                                    img{
-
+                                    border: 1px solid #ccc;
+                                    a{
+                                        display: block;
+                                        padding: 10px;
+                                        text-align: center;
+                                        img{
+                                            // border: 1px solid #ccc;
+                                        }
+                                        span{
+                                            display: block;
+                                            padding: 0;
+                                            text-align: center;
+                                            margin-top: 20px;
+                                        }
                                     }
                                 }
                             }
