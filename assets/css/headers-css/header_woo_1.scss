@@ -128,24 +128,28 @@
                                 color:red;
                             }
                         }
+                        // LEVEL 1
                         .sub-menu{
                             display: none;
-                            padding: 20px;
                         }
                         &:hover{
                             .sub-menu{
                                 display: flex;
                                 margin: 0;
+                                padding: 20px;
+                                padding-left: 15px;
                                 background-color: #fff;
                                 position: absolute;
-                                left: 0;
+                                // left: 0;
                                 z-index: 999;
                                 .menu-item{
                                     width: 20%;
-
                                     border: 1px solid #ccc;
+
+
                                     a{
                                         display: block;
+                                        //border: 1px solid #ccc;
                                         padding: 10px;
                                         text-align: center;
                                         img{
@@ -158,14 +162,52 @@
                                             margin-top: 20px;
                                         }
                                     }
-
                                 }.menu-item-has-children {
                                     position: relative;
-
+                                    // LEVEL 2
                                     .sub-menu{
-                                    li{
-                                        border:none;
+                                        display: none;
                                     }
+                                    &:hover{
+                                        .sub-menu{
+                                            display:flex;
+                                            padding-left:0;
+                                            margin: 0;
+                                            li{
+                                                border:none;
+                                                display: flex;
+                                                width:100%;
+                                                padding: 10px;
+                                                // border: 1px solid #ccc;
+                                                a{
+                                                    // border:none;
+                                                    display: block;
+                                                    width: 100%;
+                                                    min-width: 120px;
+                                                    padding: 10px;
+                                                    border: 1px solid #ccc;
+                                                    img{
+                                                    }
+                                                    span{
+                                                        display: block;
+                                                        min-width: 120px;
+                                                        text-align: center;
+                                                    }
+                                                }
+                                                .sub-menu{
+                                                    display: none;
+                                                }
+                                                &:hover{
+
+                                                    .sub-menu{
+                                                        display: block;
+                                                        margin-top: 150px;
+
+
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
