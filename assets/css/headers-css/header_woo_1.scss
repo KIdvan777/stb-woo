@@ -142,6 +142,7 @@
                                 z-index: 999;
                                 .menu-item{
                                     width: 20%;
+
                                     border: 1px solid #ccc;
                                     a{
                                         display: block;
@@ -156,6 +157,15 @@
                                             text-align: center;
                                             margin-top: 20px;
                                         }
+                                    }
+
+                                }.menu-item-has-children {
+                                    position: relative;
+
+                                    .sub-menu{
+                                    li{
+                                        border:none;
+                                    }
                                     }
                                 }
                             }

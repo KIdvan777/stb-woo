@@ -117,27 +117,12 @@
                     <div class="col-md-12 main_menu_header_woo_1">
                         <!-- Nav main menu -->
                         <?php
-                            if( has_nav_menu('primary') ){
-                                wp_nav_menu( [
-                                    'theme_location'  => 'primary',
-                                    'menu'            => 'STB Primary menu',
-                                    'container'       => 'div',
-                                    'container_class' => 'main_menu',
-                                    'container_id'    => 'main_menu',
-                                    'menu_class'      => 'menu_ul',
-                                    'menu_id'         => 'menu_ul',
-                                    'echo'            => true,
-                                    'fallback_cb'     => 'wp_page_menu',
-                                    'before'          => '',
-                                    'after'           => '',
-                                    'link_before'     => '',
-                                    'link_after'      => '',
-                                    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                                    'depth'           => 0,
-                                    'walker'          => '',
-                                ] );
-                            }
-                         ?>
+                        if( get_theme_mod('menu_setting') == 'menu 1'):
+                            get_template_part('template-parts/template-headers/woo-menus/menu_1');
+                        else:
+                            get_template_part('template-parts/template-headers/woo-menus/menu_2');
+                        endif;
+                        ?>
                     </div>
 
                 </div>

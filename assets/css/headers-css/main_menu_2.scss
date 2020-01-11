@@ -1,0 +1,89 @@
+.header_woo_1{
+    .bottom_header_woo_1{
+        .main_menu_2{
+            .menu_ul_2{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                li{
+                    width: 100%;
+                    height: 100%;
+                    padding-bottom: 10px;
+                    a{
+                        text-decoration: none;
+                        color:$main_text;
+                    }
+                    &:hover{
+                        a{
+                            text-decoration: none;
+                            color:$main_green;
+                        }
+                    }
+                }
+                .menu-item-has-children{
+                    .sub-menu{
+                        display: none;
+                    }&:hover{
+                        // first level
+                        .sub-menu{
+                            display: flex;
+                            width: 100%;
+                            position: absolute;
+                            left: 0;
+                            z-index: 9999;
+                            background-color: #fff;
+                            padding: 10px;
+                            margin: 0;
+                            .menu-item{
+                                // border: 1px solid #ccc;
+                                margin: 0;
+                                padding: 5px;
+                                text-align: center;
+                                a{
+                                    display: block;
+                                    width: 100%;
+                                    border: 1px solid $main_text;
+                                    color: $main_text;
+                                    img{
+                                        padding: 5px;
+                                    }
+                                    span{
+                                        display: block;
+                                        width: 100%;
+                                        padding: 0;
+                                    }
+                                }&:hover{
+                                    a{
+                                        color: $main_green;
+                                        border: 1px solid $main_green;
+                                    }
+                                }
+                                // level second
+                                .sub-menu{
+                                    display: none;
+                                }&:hover{
+                                    .sub-menu{
+                                        display:flex;
+                                        position: absolute;
+                                        z-index: 9999;
+                                        background-color: #fff;
+                                        li{
+                                            a{
+                                                color: $main_text;
+                                                border: 1px solid $main_text;
+                                            }&:hover{
+                                                a{
+                                                    color: $main_green;
+                                                    border: 1px solid $main_green;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
