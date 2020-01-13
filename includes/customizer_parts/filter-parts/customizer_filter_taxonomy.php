@@ -35,7 +35,7 @@ if( class_exists( 'WP_Customize_Control' ) ):
 endif;
 
 $wp_customize->add_setting('stb_taxonomy_filter_setting', array(
-    'default' =>'product_cat',
+    'default' =>'taxonomy',
     'transport' =>'refresh'
 ));
 

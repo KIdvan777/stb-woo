@@ -244,7 +244,7 @@ ul{padding:0;margin:0}
 .top_hits_variation ul>li a{text-decoration:none;color:#666464}
 .top_hits_variation ul>li a:hover{color:#85c441}
 .top_hits_line{width:100%;height:1px;background-color:#e5e5e5}
-.top_hits{overflow:hidden;background-color:#fff;padding-top:20px;padding-bottom:20px}
+.top_hits{overflow:hidden;background-color:#fff;padding-top:20px;padding-bottom:20px;padding-left:15px;padding-right:15px}
 .top_hits .top_hits_item{position:relative;padding-bottom:10px}
 .top_hits .top_hits_item .top_hits_item_overlay{display:none;width:100%;height:100%;border:1px solid #fff;position:absolute;top:0;left:0}
 .top_hits .top_hits_item .top_hits_item_overlay .top_hits_item_overlay_link{display:relative}

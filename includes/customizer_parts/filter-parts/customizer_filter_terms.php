@@ -26,7 +26,7 @@ if( class_exists( 'WP_Customize_Control' ) ):
 endif;
 
 $wp_customize->add_setting('stb_terms_filter_setting', array(
-    'default' =>'',
+    'default' =>'term',
     'transport' =>'refresh'
 ));
 

@@ -10,26 +10,20 @@ if( class_exists( 'WP_Customize_Control' ) ):
 				<select <?php $this->link(); ?>>
 
 	            <?php
-                $args = array(
-                	'public'   => true,
-                    '_builtin' => false
-                );
-                $output   = 'names'; // names or objects, note names is the default
-                $operator = 'and';   // 'and' or 'or'
-                $post_types = get_post_types( $args, $output, $operator );
-                foreach ( $post_types as $post_type ) {
+	                $args = array(
+	                	'public'   => true,
+	                    '_builtin' => false
+	                );
+	                $output   = 'names'; // names or objects, note names is the default
+	                $operator = 'and';   // 'and' or 'or'
+	                $post_types = get_post_types( $args, $output, $operator );
+	                foreach ( $post_types as $post_type ) {
 
-                    echo "<option " . selected( $this->value(), $post_type ) . " value='" . $post_type . "'>" . $post_type . "</option>";
-
-
-                }
-
+	                    echo "<option " . selected( $this->value(), $post_type ) . " value='" . $post_type . "'>" . $post_type . "</option>";
+	                }
 	            ?>
-
-
 			  </select>
 		  </label>
-
 
     <?}
 }
@@ -37,7 +31,7 @@ if( class_exists( 'WP_Customize_Control' ) ):
 endif;
 
 $wp_customize->add_setting('stb_post_type_filter_setting', array(
-    'default' =>'',
+    'default' =>'post_type',
     'transport' =>'refresh'
 ));
 

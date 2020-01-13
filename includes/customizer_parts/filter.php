@@ -17,3 +17,4 @@ $wp_customize->add_section('stb_product_section', array(
 include(get_template_directory() . '/includes/customizer_parts/filter-parts/customizer_filter_post_type.php');
 include(get_template_directory() . '/includes/customizer_parts/filter-parts/customizer_filter_taxonomy.php');
 include(get_template_directory() . '/includes/customizer_parts/filter-parts/customizer_filter_terms.php');
+include(get_template_directory() . '/includes/customizer_parts/filter-parts/customizer_filter_posts_per_page.php');
