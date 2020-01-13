@@ -1,13 +1,29 @@
 <?php
 get_template_part('template-parts/template-headers/headers');
 
-
-
-
 $some =  get_theme_mod('featured_post');
+$post_type =  get_theme_mod('stb_post_type_filter_setting');
+
+
+$args = array(
+	'public'   => true,
+	//'_builtin' => false
+);
+$output = 'names'; // или objects
+$operator = 'and'; // 'and' или 'or'
+
+$taxonomies = get_taxonomies( $args, $output, $operator );
+pr($taxonomies);
+// if( $taxonomies ){
+// 	foreach( $taxonomies as $taxonomy ){
+// 		echo '<p>'. $taxonomy. '</p>';
+// 	}
+// }
+
+
 
 $cat = new WP_Query(array(
-    'post_type'=>'product',
+    'post_type'=> $post_type,
     'posts_per_page' => 6,
     'tax_query' => array(
     		array(
@@ -19,6 +35,9 @@ $cat = new WP_Query(array(
     	)
 ));
 //pr($cat);
+
+
+
 
 ?>
 <!-- SECTION TOP HITS -->
