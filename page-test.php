@@ -1,26 +1,9 @@
 <?php
 get_template_part('template-parts/template-headers/headers');
 
-$some =  get_theme_mod('featured_post');
 $post_type =  get_theme_mod('stb_post_type_filter_setting');
-
-
-$args = array(
-	'public'   => true,
-	//'_builtin' => false
-);
-$output = 'names'; // или objects
-$operator = 'and'; // 'and' или 'or'
-
-$taxonomies = get_taxonomies( $args, $output, $operator );
-pr($taxonomies);
-// if( $taxonomies ){
-// 	foreach( $taxonomies as $taxonomy ){
-// 		echo '<p>'. $taxonomy. '</p>';
-// 	}
-// }
-
-
+$taxes = get_theme_mod('stb_taxonomy_filter_setting');
+$terms =  get_theme_mod('stb_terms_filter_setting');
 
 $cat = new WP_Query(array(
     'post_type'=> $post_type,
@@ -29,16 +12,11 @@ $cat = new WP_Query(array(
     		array(
     			'taxonomy' => 'product_cat',
     			'field'    => 'id',
-                'terms'    => $some
+                'terms'    => $terms
 
     		)
     	)
-));
-//pr($cat);
-
-
-
-
+    ));
 ?>
 <!-- SECTION TOP HITS -->
     <section class="top_hits_section">

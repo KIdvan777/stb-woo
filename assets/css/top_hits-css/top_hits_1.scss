@@ -7,6 +7,7 @@
     padding-right: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
+    align-items: center;
 }
 
 .top_hits_variation ul>li{
@@ -23,14 +24,7 @@
     }
 }
 
-.top_hits_variation {
-    .top_hits_arrow{
-        border: 1px solid #fff;
-        &:hover{
-            border: 1px solid $main_green;
-        }
-    }
-}
+
 
 .top_hits_line{
     width: 100%;

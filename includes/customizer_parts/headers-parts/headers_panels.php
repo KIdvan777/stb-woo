@@ -4,6 +4,6 @@ array(
     'priority' => 10,
     'capability' => 'edit_theme_options',
     'theme_supports' => '',
-    'title' => __('STB Headers Settings', 'stb'),
+    'title' => __('STB Settings', 'stb'),
     'description' => __('Configure general settings for the Theme Name Theme', 'theme-slug')
 ));

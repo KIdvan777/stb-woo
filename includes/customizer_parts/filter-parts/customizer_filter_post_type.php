@@ -1,7 +1,7 @@
 <?php
 if( class_exists( 'WP_Customize_Control' ) ):
 	class WP_Customize_Post_Type_Filter_Control extends WP_Customize_Control {
-		public $type = 'latest_post_dropdown';
+		public $type = 'filter_dropdown_1';
 
 		public function render_content() {?>
 
@@ -29,7 +29,7 @@ if( class_exists( 'WP_Customize_Control' ) ):
 
 			  </select>
 		  </label>
-          
+
 
     <?}
 }
@@ -41,20 +41,15 @@ $wp_customize->add_setting('stb_post_type_filter_setting', array(
     'transport' =>'refresh'
 ));
 
-// $wp_customize->add_section('stb_post_type_filter_section', array(
-//     'title' => __('STB test', 'stb'),
-//     'prioryty' => 40
-// ));
-
 $wp_customize->add_control(
     new WP_Customize_Post_Type_Filter_Control(
      $wp_customize,
-     'stb_post_type_filter_control',
+     	'stb_post_type_filter_control',
      array(
-     'label' => __( 'Select A Post Type', 'stb' ),
-     'section' => 'header_section',
-     'settings' => 'stb_post_type_filter_setting',
-     // 'post_type' => 'page'
-     )
- )
+     	'label' => __( 'Select A Post Type', 'stb' ),
+     	'section' => 'stb_product_section',
+     	'settings' => 'stb_post_type_filter_setting',
+
+     	)
+ 	)
 );

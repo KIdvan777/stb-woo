@@ -1,22 +1,14 @@
 <?php
 
-$wp_customize->add_panel('menu_settings_panel', array(
-    'priority' => 15,
-    'capability' => 'edit_theme_options',
-    'theme_supports' => '',
-    'title' => __('Menu Settings', 'stb'),
-    'description' => __('Configure general settings for the Theme Name Theme', 'theme-slug')
-));
-
 $wp_customize->add_setting('menu_setting', array(
     'default' =>'menu 1',
     'transport' =>'refresh'
 ));
 
 $wp_customize->add_section('menu_section', array(
-    'title' => __('STB Hero', 'stb'),
+    'title' => __('STB Menu', 'stb'),
     'prioryty' => 35,
-    'panel' => 'menu_settings_panel'
+    'panel' => 'stb_headers_panel'
 ));
 
 // Hero section Choices
