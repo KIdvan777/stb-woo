@@ -66,47 +66,24 @@ $cat = new WP_Query(array(
                         while ( $cat->have_posts() ):
                             $cat->the_post();
 
-                            if($posts_per_page==4):?>
+                            if(get_theme_mod( 'stb_columns_filter_setting') == 3 )
+                            {
+                                get_template_part('template-parts/template-top-hits/top-hits-columns/columns_3');
+                            }
+                            if(get_theme_mod( 'stb_columns_filter_setting') == 4 )
+                            {
+                                get_template_part('template-parts/template-top-hits/top-hits-columns/columns_4');
+                            }
+                            if(get_theme_mod( 'stb_columns_filter_setting') == 5 )
+                            {
+                                get_template_part('template-parts/template-top-hits/top-hits-columns/columns_5');
+                            }
+                            if(get_theme_mod( 'stb_columns_filter_setting') == 6 )
+                            {
+                                get_template_part('template-parts/template-top-hits/top-hits-columns/columns_6');
+                            }
 
-                                <div class="top_hits_item col-lg-3 col-md-3 col-sm-6">
-                                    <div class="top_hits_item__img">
-                                        <?php the_post_thumbnail(); ?>
-                                    </div>
-                                    <div class="top_hits_item__span">
-                                        <span>
-                                            <?php the_title(); ?>
-                                        </span>
-                                    </div>
-                                    <div class="top_hits_item_overlay">
-                                        <div class="top_hits_item_overlay_link">
-                                            <a href="<?php the_permalink(); ?>">
-                                                подробнее
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            <?php else:?>
-
-                            <div class="top_hits_item col-lg-2 col-md-4 col-sm-6">
-                                <div class="top_hits_item__img">
-                                    <?php the_post_thumbnail(); ?>
-                                </div>
-                                <div class="top_hits_item__span">
-                                    <span>
-                                        <?php the_title(); ?>
-                                    </span>
-                                </div>
-                                <div class="top_hits_item_overlay">
-                                    <div class="top_hits_item_overlay_link">
-                                        <a href="<?php the_permalink(); ?>">
-                                            подробнее
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endif; ?>
-                        <?endwhile; wp_reset_query();?>
+                        endwhile; wp_reset_query();?>
 
                     </div>
                 </div>

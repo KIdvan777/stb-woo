@@ -18,3 +18,4 @@ include(get_template_directory() . '/includes/customizer_parts/filter-parts/cust
 include(get_template_directory() . '/includes/customizer_parts/filter-parts/customizer_filter_taxonomy.php');
 include(get_template_directory() . '/includes/customizer_parts/filter-parts/customizer_filter_terms.php');
 include(get_template_directory() . '/includes/customizer_parts/filter-parts/customizer_filter_posts_per_page.php');
+include(get_template_directory() . '/includes/customizer_parts/filter-parts/customizer_filter_columns.php');
