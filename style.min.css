@@ -144,8 +144,10 @@ ul{padding:0;margin:0}
 .header_2 .top_header_2 .top_header_2_left_content div i{margin-right:5px}
 .header_2 .top_header_2 .top_header_2_right_content div{margin-left:20px}
 .header_2 .top_header_2 .top_header_2_right_content div i{margin-right:5px}
-.header_2 .middle_header_2{padding-right:15px;padding-left:15px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#000}
-.header_2 .middle_header_2 .logo_2{padding-top:1rem;padding-bottom:1rem;color:#666464;font-size:24px}
+.header_2 .middle_header_2{padding-right:15px;padding-left:15px;padding-top:10px;padding-bottom:10px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#000}
+.header_2 .middle_header_2 .logo_2 h1{margin:0;color:#666464;font-size:1.5rem}
+.header_2 .middle_header_2 .logo_2 p{margin:0;padding:0}
+.header_2 .middle_header_2 .logo_2 p a{display:block;font-size:1.4rem;font-weight:bold;text-decoration:none;color:#666464}
 .header_2 .middle_header_2 .middle_header_content{-ms-flex-item-align:center;align-self:center}
 .header_2 .middle_header_2 .middle_header_right_content .shop_icons .shop_cart,.header_2 .middle_header_2 .middle_header_right_content .shop_icons .login{margin-left:20px}
 .header_2 .middle_header_2 .middle_header_right_content .shop_icons .shop_cart i,.header_2 .middle_header_2 .middle_header_right_content .shop_icons .login i{position:relative;color:#666464}

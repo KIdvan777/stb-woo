@@ -31,14 +31,28 @@
     .middle_header_2{
         padding-right: 15px;
         padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         align-items: center;
         color:#000;
         .logo_2{
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            color: $main_text;
-            font-size: 24px;
-            /* font-size: 36px; */
+            h1{
+                margin: 0;
+                color: $main_text;
+                font-size: 1.5rem;
+            }
+            p{
+                margin: 0;
+                padding: 0;
+                a{
+                    display: block;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color:$main_text;
+                    /* font-size: 36px; */
+                }
+            }
         }
         .middle_header_content{
             align-self: center;
