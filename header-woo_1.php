@@ -10,6 +10,7 @@
 </head>
 <body <?php body_class(); ?>>
     <header class="header_woo_1 ">
+        <!-- TOP HEADER -->
         <div class="top_header_woo_1">
             <div class="container">
                 <div class="raw">
