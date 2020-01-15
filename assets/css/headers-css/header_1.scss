@@ -6,11 +6,25 @@
     .main_menu{
         .menu_ul{
             li{
+                padding-bottom: 10px;
                 a{
                     color:#fff;
                     text-decoration: none;
                 }a:hover{
                     color:red;
+                }
+                .sub-menu{
+                    display: none;
+                }
+                &:hover{
+                    .sub-menu{
+                        display: flex;
+                        position: absolute;
+                        background-color: #fff;
+                        li{
+                            color: $main_text;
+                        }
+                    }
                 }
             }
         }

@@ -103,6 +103,7 @@
                                 	stb_woocommerce_cart_link();
                                 ?>
                             </div>
+                            <!-- end -->
                         </div>
                         <div class="burger">
                             <img src="<?php echo get_template_directory_uri() . '/assets/img/menu-button-of-three-horizontal-lines.svg'?> " alt="">

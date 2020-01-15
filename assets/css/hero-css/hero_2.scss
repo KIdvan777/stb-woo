@@ -1,0 +1,54 @@
+
+.hero_background_2{
+    padding-bottom: 20px;
+    padding-top: 200px;
+    background: rgb(235,226,134);
+    background: linear-gradient(0deg, rgba(235,226,134,1) 0%, rgba(249,250,215,1) 37%, rgba(255,255,255,1) 100%);
+
+}
+
+.hero_2{
+    .hero_content_wrapper_2{
+        width: 50%;
+        position: relative;
+        .hero_content_2{
+
+            position: absolute;
+            width: 100%;
+            top:50%;
+            left: 25%;
+            transform: translate(0%, -50%);
+            z-index: 999;
+            span{
+                display: block;
+                width: 100%;
+                font-size: 24px;
+                font-weight: bold;
+                color: $main_text;
+
+            }
+            .button{
+                position: absolute;
+                z-index: 9999;
+                margin-top: 20px;
+                background-color: $main_green;
+                border:none;
+                font-size: 16px;
+                font-weight: bold;
+                color:#fff;
+                text-decoration: none;
+                padding:5px;
+
+            }
+        }
+    }
+    .hero_img_2{
+        width: 50%;
+        img{
+            display: block;
+            margin: auto;
+            width: 50%;
+            height: auto;
+        }
+    }
+}
