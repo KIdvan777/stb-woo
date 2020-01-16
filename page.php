@@ -36,11 +36,8 @@
 
 				</main><!-- #main -->
 			</div><!-- #primary -->
-
 		</div>
-
 	</div>
-
 </div>
 
 <?php

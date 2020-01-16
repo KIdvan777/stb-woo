@@ -64,7 +64,7 @@ add_action('woocommerce_after_single_product', 'woocommerce_output_product_data_
 add_action('woocommerce_after_single_product', 'woocommerce_upsell_display', 15 );
 add_action('woocommerce_after_single_product', 'woocommerce_output_related_products', 20 );
 
-remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+// remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 
 include( get_template_directory() . '/woocommerce/includes/shop.php' );
 include( get_template_directory() . '/woocommerce/includes/archive_description.php' );
