@@ -20,9 +20,9 @@ add_action( 'woocommerce_before_main_content', 'stb_single_product_wrapper_start
 
 function stb_single_product_wrapper_start(){
     ?>
-        <div class="container bgc_color">
+        <div class="container">
             <div class="raw">
-            	<div class="col-md-12 margin_top_20px">
+            	<div class="col-md-12 bgc_color margin_top_20px">
             		<?php woocommerce_output_content_wrapper(); ?>
 
     <?
@@ -66,5 +66,5 @@ add_action('woocommerce_after_single_product', 'woocommerce_output_related_produ
 
 remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 
-
 include( get_template_directory() . '/woocommerce/includes/shop.php' );
+include( get_template_directory() . '/woocommerce/includes/archive_description.php' );

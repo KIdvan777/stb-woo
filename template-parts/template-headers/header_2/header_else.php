@@ -114,6 +114,7 @@
         </div>
     </header>
     <div class="header_2_bgc">
+        <img src="<?php echo get_theme_mod('stb_header_2_background_setting'); ?>" alt="">
 
     </div>
 <!-- HERO -->

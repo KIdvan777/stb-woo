@@ -1,6 +1,5 @@
-.woocommerce{
-    .content-area{
-
+.content-area{
+    .site-main{
         .bgc_color{
             background-color: #fff;
         }
@@ -20,7 +19,6 @@
                 }
             }
             .woocommerce-product-gallery{
-
                 .flex-viewport{
                     position: relative;
                 }
@@ -52,8 +50,6 @@
                     text-align: center;
                     .woocommerce-LoopProduct-link{
                         display: block;
-                        // max-width: 150px;
-
                     }
                 }
             }

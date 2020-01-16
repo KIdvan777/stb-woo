@@ -6,10 +6,10 @@ $taxes = get_theme_mod('stb_taxonomy_filter_setting');
 $terms =  get_theme_mod('stb_terms_filter_setting');
 $posts_per_page =  get_theme_mod('stb_post_per_page_filter_setting');
 
-pr($post_type);
-pr($taxes);
-pr($terms);
-pr($posts_per_page);
+// pr($post_type);
+// pr($taxes);
+// pr($terms);
+// pr($posts_per_page);
 
 $cat = new WP_Query(array(
     'post_type'=> $post_type,
@@ -28,7 +28,7 @@ $cat = new WP_Query(array(
     <section class="top_hits_section">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="<?= get_theme_mod('stb_grid_filter_setting'); ?>">
                     <div class="top_hits_heading flex space_between">
                         <div class="top_hits_head">
                             ХИТЫ ПРОДАЖ

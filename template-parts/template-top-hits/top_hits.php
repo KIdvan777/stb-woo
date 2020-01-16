@@ -34,16 +34,6 @@
                     <div class="top_hits_line">
                     </div>
                     <div class="top_hits flex">
-                        <!-- <div class="top_hits_item top_hits_item_banner col-lg-2 col-md-4 col-sm-6">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/img/best_2.jpg'?>" alt="">
-                            <div class="top_hits_item_overlay">
-                                <div class="top_hits_item_overlay_link">
-                                    <a href="#">
-                                        подробнее
-                                    </a>
-                                </div>
-                            </div>
-                        </div> -->
 
                         <?php
                             $main_page_products_view = new WP_Query( array(
