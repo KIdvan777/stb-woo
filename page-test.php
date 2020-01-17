@@ -89,7 +89,31 @@ $cat = new WP_Query(array(
                     </div>
 
                     <div class="top_hits top_hits_filter col-md-4">
-                        <?php dynamic_sidebar('shop_sidebar'); ?>
+                        <form class="" action="http://localhost:3000/shop/" method="get">
+                            <input type="text" name="get_price" value="">
+                        </form>
+                        <?php
+                            if(isset($_GET['get_price'])){
+                                $price = $_GET['get_price'];
+                            }
+
+                            $args = array(
+                                'price' => array( $price ),
+                                );
+                            $products = wc_get_products( $args );
+
+                            foreach($products as $product){
+                                $product_price = $product->get_price();
+                                $product_name = $product->get_name();
+                                $image_url = wp_get_attachment_image_src($product->get_image_id());
+                                echo $product_price . '<br>';
+                                echo $product_name . '<br>';
+                                // pr($image_url);
+                                echo '<img src="'.$image_url[0].'"/>' . '<br>';
+                            }
+
+                         ?>
+
                     </div>
                 </div>
             </div>
