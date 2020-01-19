@@ -11,6 +11,7 @@ include( get_template_directory() . '/includes/front/widgets.php' );
 include( get_template_directory() . '/includes/tax-thumb.php' );
 include( get_template_directory() . '/includes/var_dump.php' );
 include( get_template_directory() . '/includes/filter/filter_simple.php' );
+include( get_template_directory() . '/includes/ajax.php' );
 // include( get_template_directory() . '/includes/carbon-fields/cbr.php' );
 // include( get_template_directory() . '/includes/custom-theme-options/theme-options.php' );
 // include( get_template_directory() . '/includes/custom-theme-options/metabox.php' );

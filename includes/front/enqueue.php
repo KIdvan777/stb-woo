@@ -32,8 +32,12 @@ function stb_scripts() {
 
 	wp_enqueue_script( 'stb-navigation' );
 	wp_enqueue_script( 'stb-skip-link-focus-fix' );
-		wp_enqueue_script( 'stb_owl_js' );
+	wp_enqueue_script( 'stb_owl_js' );
 	wp_enqueue_script( 'stb_custom_js' );
+	wp_localize_script('stb_custom_js', 'stb_ajax_search_form', array(
+		'url' => admin_url('admin-ajax.php'),
+		'nonce' => wp_create_nonce('search-nonce')
+	));
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

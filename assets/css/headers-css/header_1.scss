@@ -32,8 +32,22 @@
 }
 
 .logo{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    // padding-top: 1rem;
+    // padding-bottom: 1rem;
+    p{
+        a{
+            font-size: 1.4rem;
+            text-decoration: none;
+            color:#fff;
+        }
+    }
+    h1{
+        font-size: 1.4rem;
+
+    }
+
     margin-left: 15px;
 }
 

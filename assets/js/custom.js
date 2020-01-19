@@ -32,66 +32,95 @@ jQuery(document).ready(function () {
 });
 "use strict";
 
-var searchOverlay = jQuery('.search_form_overlay_container');
-var searchIcon = jQuery('.search_icon');
-var searchformVissibleCloseIcon = jQuery('.search_form_vissible_close_icon');
-var domDocument = jQuery(document);
-var searchInput = jQuery('#search_input');
-var typingTimer;
-var resultDiv = jQuery('.search_form_overlay__results');
-var isOverlayOpen = false;
-var isSipnnerVissible = false;
-var previousValue;
-searchIcon.on('click', openSearchOverlay);
+jQuery(function ($) {
+  var searchOverlay = jQuery('.search_form_overlay_container');
+  var searchIcon = jQuery('.search_icon');
+  var searchformVissibleCloseIcon = jQuery('.search_form_vissible_close_icon');
+  var domDocument = jQuery(document);
+  var searchInput = jQuery('#search_input');
+  var typingTimer;
+  var resultDiv = jQuery('.search_form_overlay__results');
+  var isOverlayOpen = false;
+  var isSipnnerVissible = false;
+  var previousValue;
+  searchIcon.on('click', openSearchOverlay);
 
-function openSearchOverlay() {
-  searchOverlay.addClass('search_form_overlay_container_show');
-  isOverlayOpen = true;
-}
-
-searchformVissibleCloseIcon.on('click', closeSearchOverlay);
-
-function closeSearchOverlay() {
-  searchOverlay.removeClass('search_form_overlay_container_show');
-  isOverlayOpen = false;
-}
-
-domDocument.on('keyup', keyPressDispatcher);
-
-function keyPressDispatcher(event) {
-  // console.log(event.keyCode);
-  if (event.keyCode == 13 && !isOverlayOpen && !JQuery("input, textarea").is(':focus')) {
-    openSearchOverlay();
+  function openSearchOverlay() {
+    searchOverlay.addClass('search_form_overlay_container_show');
+    isOverlayOpen = true;
   }
 
-  if (event.keyCode == 27 && isOverlayOpen) {
-    closeSearchOverlay();
+  searchformVissibleCloseIcon.on('click', closeSearchOverlay);
+
+  function closeSearchOverlay() {
+    searchOverlay.removeClass('search_form_overlay_container_show');
+    isOverlayOpen = false;
   }
-}
 
-searchInput.on('keyup', typingLogic);
+  domDocument.on('keyup', keyPressDispatcher);
 
-function typingLogic() {
-  if (searchInput.val() != previousValue) {
-    clearTimeout(typingTimer);
+  function keyPressDispatcher(event) {
+    // console.log(event.keyCode);
+    if (event.keyCode == 13 && !isOverlayOpen && !JQuery("input, textarea").is(':focus')) {
+      openSearchOverlay();
+    }
 
-    if (searchInput.val()) {
-      if (!isSipnnerVissible) {
-        resultDiv.html('<div class="spinner-loader"><img src="//localhost:3000/wp-content/themes/stb/assets/img/25.gif"></div>');
-        isSipnnerVissible = true;
-      }
-
-      typingTimer = setTimeout(getResults, 2000);
-    } else {
-      resultDiv.html('');
-      isSipnnerVissible = false;
+    if (event.keyCode == 27 && isOverlayOpen) {
+      closeSearchOverlay();
     }
   }
 
-  previousValue = searchInput.val();
-}
+  searchInput.on('keyup', typingLogic);
 
-function getResults() {
-  resultDiv.html('result');
-  isSipnnerVissible = false;
-}
+  function typingLogic() {
+    if (searchInput.val() != previousValue) {
+      clearTimeout(typingTimer);
+
+      if (searchInput.val()) {
+        if (!isSipnnerVissible) {
+          resultDiv.html('<div class="spinner-loader"><img src="//localhost:3000/wp-content/themes/stb/assets/img/25.gif"></div>');
+          isSipnnerVissible = true;
+        }
+
+        typingTimer = setTimeout(getResults, 2000);
+      } else {
+        resultDiv.html('');
+        isSipnnerVissible = false;
+      }
+    }
+
+    previousValue = searchInput.val();
+  }
+
+  function getResults() {}
+});
+"use strict";
+
+jQuery(function ($) {
+  $('#search_input').on('keyup', function () {
+    var search = $('#search_input').val();
+
+    if (search.length < 4) {
+      return false;
+    }
+
+    ;
+    var data = {
+      s: search,
+      action: 'search-ajax',
+      nonce: stb_ajax_search_form.nonce
+    };
+    $.ajax({
+      url: stb_ajax_search_form.url,
+      data: data,
+      type: 'POST',
+      dataType: 'json',
+      beforeSend: function beforeSend(xhr) {},
+      success: function success(data) {
+        var resultDiv = $('.search_form_overlay__results');
+        resultDiv.html(data.out);
+        console.log(data.out);
+      }
+    }); // console.log(data);
+  });
+});

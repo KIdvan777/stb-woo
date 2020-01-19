@@ -62,8 +62,7 @@ $cat = new WP_Query(array(
                         </div>
                         <div class="top_hits flex">
 
-                        <?php
-
+                            <?php
                             while ( $cat->have_posts() ):
                                 $cat->the_post();
 
@@ -87,11 +86,14 @@ $cat = new WP_Query(array(
                             endwhile; wp_reset_query();?>
                         </div>
                     </div>
-
                     <div class="top_hits top_hits_filter col-md-4">
-                        <form class="" action="http://localhost:3000/shop/" method="get">
+                        <form class="" action="http://localhost:3000/test/" method="get">
                             <input type="text" name="get_price" value="">
                         </form>
+                    </div>
+                </div>
+                <div class="col-md-12 flex">
+                    <div class="top_hits flex">
                         <?php
                             if(isset($_GET['get_price'])){
                                 $price = $_GET['get_price'];
@@ -113,8 +115,8 @@ $cat = new WP_Query(array(
                             }
 
                          ?>
-
                     </div>
+
                 </div>
             </div>
         </div>

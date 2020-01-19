@@ -132,7 +132,9 @@ ul{padding:0;margin:0}
 .header_1 .main_menu .menu_ul li .sub-menu{display:none}
 .header_1 .main_menu .menu_ul li:hover .sub-menu{display:-webkit-box;display:-ms-flexbox;display:flex;position:absolute;background-color:#fff}
 .header_1 .main_menu .menu_ul li:hover .sub-menu li{color:#666464}
-.logo{padding-top:1rem;padding-bottom:1rem;margin-left:15px}
+.logo{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-left:15px}
+.logo p a{font-size:1.4rem;text-decoration:none;color:#fff}
+.logo h1{font-size:1.4rem}
 .main_menu{margin-right:15px}
 .main_menu .menu_ul{padding-top:1rem;padding-bottom:1rem}
 .main_menu .menu_ul li{display:inline;margin-left:20px;font-size:16px}

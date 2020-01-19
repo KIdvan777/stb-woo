@@ -26,3 +26,6 @@
         </div>
     </div>
 </div>
+<div class="new_result">
+
+</div>
