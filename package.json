@@ -1,5 +1,5 @@
 {
-  "name": "your-project",
+  "name": "stb",
   "description": "A WPGulp based project.",
   "version": "1.0.0",
   "author": "Author Name (https://twitter.com/MrAhmadAwais/)",
@@ -35,7 +35,9 @@
     "gulp-sourcemaps": "^2.6.2",
     "gulp-uglify": "^3.0.0",
     "gulp-uglifycss": "^1.0.6",
-    "gulp-wp-pot": "^2.0.7"
+    "gulp-wp-pot": "^2.0.7",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   },
   "scripts": {
     "start": "gulp",
@@ -45,6 +47,10 @@
     "customJS": "gulp customJS",
     "images": "gulp images",
     "clearCache": "gulp clearCache",
-    "translate": "gulp translate"
+    "translate": "gulp translate",
+    "build": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
   }
 }
