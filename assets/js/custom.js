@@ -296,7 +296,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
   /***/
   function srcIndexJs(module, exports) {
-    eval("alert('djkjdf');\r\nalert('jkhjfhk');\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+    eval("\n\n//# sourceURL=webpack:///./src/index.js?");
     /***/
   }
   /******/
