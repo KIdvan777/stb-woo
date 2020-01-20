@@ -66,7 +66,8 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 // Includes
 include( get_template_directory() . '/includes/theme-customizer.php');
-
+include(get_template_directory() . '/includes/customizer_functions/hero_1.php');
+include(get_template_directory() . '/includes/customizer_functions/header_1_woo.php');
 // Hooks
 
 

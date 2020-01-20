@@ -259,7 +259,7 @@ ul{padding:0;margin:0}
 .hero_background .hero_content_wrapper .hero_content{position:absolute;width:100%;top:50%;left:25%;-webkit-transform:translate(0,-50%);transform:translate(0,-50%);z-index:999}
 .hero_background .hero_content_wrapper .hero_content span{display:block;width:100%;font-size:24px;font-weight:bold;color:#666464}
 .hero_background .hero_content_wrapper .hero_content .button{position:absolute;z-index:9999;margin-top:20px;background-color:#85c441;border:0;font-size:16px;font-weight:bold;color:#fff;text-decoration:none;padding:5px}
-.hero_background_2{padding-bottom:20px;padding-top:200px;background:#ebe286;background:-webkit-gradient(linear,left bottom,left top,from(#ebe286),color-stop(37%,#f9fad7),to(white));background:linear-gradient(0,#ebe286 0,#f9fad7 37%,white 100%)}
+.hero_background_2{padding-bottom:60px;padding-top:200px;background:#ebe286;background:-webkit-gradient(linear,left bottom,left top,from(#ebe286),color-stop(37%,#f9fad7),to(white));background:linear-gradient(0,#ebe286 0,#f9fad7 37%,white 100%)}
 .hero_2 .hero_content_wrapper_2{width:50%;position:relative}
 .hero_2 .hero_content_wrapper_2 .hero_content_2{position:absolute;width:100%;top:50%;left:25%;-webkit-transform:translate(0,-50%);transform:translate(0,-50%);z-index:999}
 .hero_2 .hero_content_wrapper_2 .hero_content_2 span{display:block;width:100%;font-size:24px;font-weight:bold;color:#666464}
