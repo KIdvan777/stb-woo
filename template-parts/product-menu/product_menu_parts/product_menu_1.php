@@ -5,7 +5,7 @@
                 <div class="col-md-12">
                     <div class="product_menu flex">
                         <?php
-                            $terms = get_terms( 'product_cat' );
+                            $terms = get_terms( 'print_cat' );
                                 if( $terms && ! is_wp_error($terms) ){
                                     foreach( $terms as $term ){?>
                                         <?php

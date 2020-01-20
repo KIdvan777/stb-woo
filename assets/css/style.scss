@@ -24,6 +24,16 @@
 @import "magnific-popup/magnific-popup.scss";
 @import "pages/page_product_cats.scss";
 @import "owl/owl_custom.scss";
+@import "slick/slick.scss";
+@import "slick/slick-theme.scss";
 @import "reset/reset.scss";
 @import "woocommerce/woo.scss";
 @import "grids/columns/columns_5.scss";
+
+.your-class{
+    .slick{
+        width: 100%;
+        height: 100%;
+        background-color: $main_green;
+    }
+}

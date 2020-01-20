@@ -3,7 +3,7 @@
 <!-- HERO SECTION -->
 <?php get_template_part('template-parts/template-hero/hero');?>
 <!-- PRODUCT MENU SECTION -->
-<?php get_template_part('template-parts/template-products-menu/product_menu');?>
+<?php get_template_part('template-parts/product-menu/product_menus');?>
 <!-- SECTION TOP HITS -->
 <?php get_template_part('template-parts/template-top-hits/top_hits');?>
 <!-- SECTION MAIN BANNER -->
