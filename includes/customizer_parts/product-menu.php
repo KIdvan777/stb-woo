@@ -1,7 +1,7 @@
 <?php
-// if( ! defined( 'ABSPATH' )){
-// 	exit;
-// }
+if( ! defined( 'ABSPATH' )){
+	exit;
+}
 
 $wp_customize->add_setting('product_menu_setting', array(
     'default' =>'product_menu_1',
@@ -29,3 +29,6 @@ $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'product_me
         )
     )
 );
+
+// Header 4 settings
+include( get_template_directory() . '/includes/customizer_parts/product-menu-parts/product_menu_2.php' );

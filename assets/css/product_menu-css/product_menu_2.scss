@@ -1,6 +1,7 @@
 /* PRODUCT MENU 2 */
 .product_menu_2_section{
-    margin-top: 20px;
+    // margin-top: 20px;
+    background-color: $main_green;
     .product_menu_2_container {
         display: flex;
         .our_services{
@@ -8,7 +9,7 @@
             align-items: center;
             justify-content: center;
             width: 20%;
-            background-color: #ccc;
+            background: $main_green;
             color:#fff;
         }
         .product_menu_2{
@@ -16,25 +17,28 @@
             width: 80%;
             background-color: #fff;
             .product_menu_item_2{
-
                 a{
                     text-decoration: none;
                 }&:hover{
                     span{
-                        color:$main_green;
+                        color:#fff;
                     }
                 }
                 span{
                     display: block;
                     text-align: center;
-                    color: #666464;
+                    color: #fff;
                     margin-top: 10px;
                 }
                 img{
+                    display: block;
                     width: 50px;
                     height: 50px;
-                    display: block;
+                    padding: 5px;
                     margin: auto;
+                    background-color: #fff;
+                    border:1px solid #ccc;
+                    border-radius: 50%;
                 }
             }
         }
