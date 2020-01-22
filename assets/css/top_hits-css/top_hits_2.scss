@@ -56,4 +56,16 @@
             }
         }
     }
+    .top_hits_2_load_ajax{
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+        button{
+            background-color: #fff;
+            border-radius: 0;
+            padding: 4px  20px;
+            border: 1px solid $main_text;
+            font-size: 1rem;
+        }
+    }
 }

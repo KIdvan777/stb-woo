@@ -7,4 +7,13 @@ jQuery(function($){
          speed: 600
       });
     });
+
+    $(document).ready(function(){
+      $('.top_hits_2_items').slick({
+         autoplay: true,
+         slidesPerRow: 4,
+         slidesToScroll: 1,
+         speed: 800
+      });
+    });
 });

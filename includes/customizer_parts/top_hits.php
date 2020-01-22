@@ -24,6 +24,7 @@ $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'stb_main_p
             'choices'        => array(
                 'top_hits 1'   => __( 'top hits 1' ),
                 'top_hits 2'  => __( 'top hits 2' ),
+				'top_hits 2_2'  => __( 'top hits 2 ajax' ),
                 'top_hits 3'  => __( 'top hits 3' )
             )
         )
