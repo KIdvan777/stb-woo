@@ -6,10 +6,10 @@ $taxes = get_theme_mod('stb_taxonomy_filter_setting');
 $terms =  get_theme_mod('stb_terms_filter_setting');
 $posts_per_page =  get_theme_mod('stb_post_per_page_filter_setting');
 
-// pr($post_type);
-// pr($taxes);
-// pr($terms);
-// pr($posts_per_page);
+pr($post_type);
+pr($taxes);
+pr($terms);
+pr($posts_per_page);
 
 $cat = new WP_Query(array(
     'post_type'=> $post_type,
@@ -68,19 +68,19 @@ $cat = new WP_Query(array(
 
                                 if(get_theme_mod( 'stb_columns_filter_setting') == 3 )
                                 {
-                                    get_template_part('template-parts/template-top-hits/top-hits-columns/columns_3');
+                                    get_template_part('template-parts/template-top-hits/top-hits/columns_3');
                                 }
                                 if(get_theme_mod( 'stb_columns_filter_setting') == 4 )
                                 {
-                                    get_template_part('template-parts/template-top-hits/top-hits-columns/columns_4');
+                                    get_template_part('template-parts/template-top-hits/top-hits/columns_4');
                                 }
                                 if(get_theme_mod( 'stb_columns_filter_setting') == 5 )
                                 {
-                                    get_template_part('template-parts/template-top-hits/top-hits-columns/columns_5');
+                                    get_template_part('template-parts/template-top-hits/top-hits/columns_5');
                                 }
                                 if(get_theme_mod( 'stb_columns_filter_setting') == 6 )
                                 {
-                                    get_template_part('template-parts/template-top-hits/top-hits-columns/columns_6');
+                                    get_template_part('template-parts/template-top-hits/top-hits/columns_6');
                                 }
 
                             endwhile; wp_reset_query();?>

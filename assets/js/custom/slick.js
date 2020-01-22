@@ -9,11 +9,11 @@ jQuery(function($){
     });
 
     $(document).ready(function(){
-      $('').slick({
+      $('.top_hits').slick({
          autoplay: true,
-         slidesPerRow: 1,
+         slidesPerRow: 6,
          slidesToScroll: 1,
-         speed: 800
+         speed: 300
       });
     });
 });
