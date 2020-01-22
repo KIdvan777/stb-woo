@@ -10,33 +10,17 @@
                 </div>
                 <div class="top_hits_2_header_buttons flex">
                     <ul class="top_hits_2_header_list flex">
-                        <li><a href="#">All</a></li>
-                        <li><a href="#">Cards</a></li>
-                        <li><a href="#">Calendars</a></li>
-                        <li><a href="#">Cataloge</a></li>
-                        <li><a href="#">Decoration</a></li>
-                        <li><a href="#">Invitations</a></li>
+                        <?php
+                            $print_services_cats = get_terms('print_cat');
+                            // pr($print_services_cats);
+                            foreach($print_services_cats as $print_service): ?>
+                                <li class="top_hits_2_header_list_item">
+                                    <?php echo $print_service->name; ?>
+                                </li>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <div class="top_hits_2_items flex col-md-12">
-                    <!-- <div class="">
-                        1
-                    </div>
-                    <div class="">
-                        2
-                    </div>
-                    <div class="">
-                        3
-                    </div>
-                    <div class="">
-                        1
-                    </div>
-                    <div class="">
-                        2
-                    </div>
-                    <div class="">
-                        3
-                    </div> -->
                     <a href="#" class="col-md-3">
                         <img src="<?php echo get_template_directory_uri() . '/assets/img/card-3.jpg'; ?>" alt="">
                         Clothes bag

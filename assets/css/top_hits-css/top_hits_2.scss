@@ -34,12 +34,12 @@
             li{
                 list-style: none;
                 padding: 10px;
-                a{
+                span{
                     display: block;
                     padding: 4px  20px;
                     border: 1px solid $main_text;
-                    text-decoration: none;
                     color:$main_text;
+                    cursor: pointer;
                 }
             }
         }

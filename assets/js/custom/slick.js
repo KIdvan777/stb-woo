@@ -1,7 +1,7 @@
 jQuery(function($){
     $(document).ready(function(){
       $('.product_menu, .product_menu_2').slick({
-         autoplay: true,
+         autoplay: false,
          slidesPerRow: 3,
          slidesToScroll: 1,
          speed: 600
@@ -9,8 +9,8 @@ jQuery(function($){
     });
 
     $(document).ready(function(){
-      $('.top_hits_2_items').slick({
-         autoplay: true,
+      $('').slick({
+         autoplay: false,
          slidesPerRow: 4,
          slidesToScroll: 1,
          speed: 800
