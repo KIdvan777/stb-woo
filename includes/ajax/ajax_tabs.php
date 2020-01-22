@@ -1,4 +1,3 @@
-
 <?php
 if(! defined('ABSPATH')){
     exit; // Exit if accessed directly
@@ -34,7 +33,10 @@ function stb_tabs_ajax_action_callback(){
              while($query_ajax_tabs->have_posts()){
                  $query_ajax_tabs->the_post();
                  ?>
-                    <?php echo get_the_title(); ?>
+                     <a href="<?php the_permalink(); ?>" class="col-md-3">
+                         <?php the_post_thumbnail(); ?>
+                         <?php the_title(); ?>
+                     </a>
                  <?php
              }
         }

@@ -1,5 +1,5 @@
 <?php
-// Hero Slider Image 2
+
 $wp_customize->add_setting('main_page_hero_image_2_setting', array(
     'default' =>'',
     'transport' =>'refresh'

@@ -30,6 +30,33 @@ jQuery(function ($) {
 });
 "use strict";
 
+jQuery(function ($) {
+  $('.top_hits_2_header_list').click(function (e) {
+    var printCatName = e.target.innerText;
+    var data = {
+      name: printCatName,
+      action: 'tabs-ajax',
+      nonce: stb_ajax_tabs_script.nonce
+    };
+    $.ajax({
+      url: stb_ajax_tabs_script.url,
+      data: data,
+      type: 'POST',
+      dataType: 'json',
+      beforeSend: function beforeSend(xhr) {
+        var resultDiv = $('.top_hits_2_items');
+        resultDiv.html('<div class="spinner-loader"><img src="//localhost:3000/wp-content/themes/stb/assets/img/25.gif"></div>');
+      },
+      success: function success(data) {
+        var resultDiv = $('.top_hits_2_items');
+        resultDiv.html('');
+        resultDiv.html(data.out);
+      }
+    });
+  });
+});
+"use strict";
+
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 /******/
@@ -415,57 +442,6 @@ jQuery(function ($) {
       slidesPerRow: 4,
       slidesToScroll: 1,
       speed: 800
-    });
-  });
-});
-"use strict";
-
-jQuery(function ($) {
-  $('.top_hits_2_header_list').click(function (e) {
-    var printCatName = e.target.innerText;
-    console.log(printCatName);
-    var data = {
-      name: printCatName,
-      action: 'tabs-ajax',
-      nonce: stb_ajax_tabs_script.nonce
-    };
-    $.ajax({
-      url: stb_ajax_tabs_script.url,
-      data: data,
-      type: 'POST',
-      dataType: 'json' // beforeSend: function(xhr){
-      //
-      // },
-      // success: function(data){
-      //     var resultDiv = $('.search_form_overlay__results');
-      //     resultDiv.html(data.out);
-      //     console.log(data.out);
-      // }
-
-    });
-  });
-});
-"use strict";
-
-jQuery(function ($) {
-  $('.top_hits_2_header_list').click(function (e) {
-    var printCatName = e.target.innerText;
-    var data = {
-      name: printCatName,
-      action: 'tabs-ajax',
-      nonce: stb_ajax_tabs_script.nonce
-    };
-    $.ajax({
-      url: stb_ajax_tabs_script.url,
-      data: data,
-      type: 'POST',
-      dataType: 'json',
-      beforeSend: function beforeSend(xhr) {},
-      success: function success(data) {
-        var resultDiv = $('.top_hits_2_items');
-        resultDiv.html('');
-        resultDiv.html(data.out);
-      }
     });
   });
 });

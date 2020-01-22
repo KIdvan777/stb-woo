@@ -1,5 +1,5 @@
 <?php
-// Hero slider 1 title
+
 $wp_customize->add_setting('stb_main_page_hero_1_bgc_color_1_setting', array(
     'default' =>'',
     'transport' =>'refresh'

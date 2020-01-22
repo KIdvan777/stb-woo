@@ -1,7 +1,5 @@
 <?php
-//  Hero slider posts class
 
-// Hero slider 1 title
 $wp_customize->add_setting('stb_main_page_hero_slide_1_title_setting', array(
     'default' =>'',
     'transport' =>'refresh'

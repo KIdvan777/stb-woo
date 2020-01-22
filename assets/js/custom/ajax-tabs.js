@@ -15,7 +15,8 @@ jQuery(function($){
             type: 'POST',
             dataType: 'json',
             beforeSend: function(xhr){
-
+                var resultDiv = $('.top_hits_2_items');
+                resultDiv.html('<div class="spinner-loader"><img src="//localhost:3000/wp-content/themes/stb/assets/img/25.gif"></div>');
             },
             success: function(data){
                 var resultDiv = $('.top_hits_2_items');

@@ -21,38 +21,23 @@
                     </ul>
                 </div>
                 <div class="top_hits_2_items flex col-md-12">
-                    <a href="#" class="col-md-3">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/img/card-3.jpg'; ?>" alt="">
-                        Clothes bag
-                    </a>
-                    <a href="#" class="col-md-3">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/img/card-3.jpg'; ?>" alt="">
-                        Clothes bag
-                    </a>
-                    <a href="#" class="col-md-3">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/img/card-3.jpg'; ?>" alt="">
-                        Clothes bag
-                    </a>
-                    <a href="#" class="col-md-3">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/img/card-3.jpg'; ?>" alt="">
-                        Clothes bag
-                    </a>
-                    <a href="#" class="col-md-3">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/img/card-3.jpg'; ?>" alt="">
-                        Clothes bag
-                    </a>
-                    <a href="#" class="col-md-3">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/img/card-3.jpg'; ?>" alt="">
-                        Clothes bag
-                    </a>
-                    <a href="#" class="col-md-3">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/img/card-3.jpg'; ?>" alt="">
-                        Clothes bag
-                    </a>
-                    <a href="#" class="col-md-3">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/img/card-3.jpg'; ?>" alt="">
-                        Clothes bag
-                    </a>
+
+                    <?php
+                        $print_cat_query = new WP_Query(array(
+                            'post_type'=>'print_service',
+
+                        ));
+
+                        if ( $print_cat_query->have_posts() ) : while ( $print_cat_query->have_posts() ) : $print_cat_query->the_post(); ?>
+                        	<!-- Цикл WordPress -->
+                            <a href="<?php the_permalink(); ?>" class="col-md-3">
+                                <?php the_post_thumbnail(); ?>
+                                <?php the_title(); ?>
+                            </a>
+                        <?php endwhile; else : ?>
+                        	<p>Записей нет.</p>
+                    <?php endif; ?>
+
                 </div>
 
             </div>

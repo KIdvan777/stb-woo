@@ -3,12 +3,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 product_menu_2_container">
-                    <div class="our_services">
+                    <!-- <div class="our_services">
                         our services
-                    </div>
+                    </div> -->
                     <div class="product_menu_2">
                         <?php
-                            $terms = get_terms( 'product_cat' );
+                            $terms = get_terms( 'print_cat' );
                                 if( $terms && ! is_wp_error($terms) ){
                                     foreach( $terms as $term ){?>
                                         <?php
