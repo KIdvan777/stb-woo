@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 owl-carousel owl-theme">
-                <div class="hero_2">
+                <div class="hero_2">dd
                     <div class="hero_item flex">
                         <div class="hero_content_wrapper_2">
                             <div class="hero_content_2">
