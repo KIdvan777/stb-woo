@@ -438,8 +438,8 @@ jQuery(function ($) {
   });
   $(document).ready(function () {
     $('').slick({
-      autoplay: false,
-      slidesPerRow: 4,
+      autoplay: true,
+      slidesPerRow: 1,
       slidesToScroll: 1,
       speed: 800
     });

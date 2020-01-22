@@ -36,7 +36,7 @@
                             </a>
                         <?php endwhile; else : ?>
                         	<p>Записей нет.</p>
-                    <?php endif; ?>
+                    <?php endif; wp_reset_query();?>
 
                 </div>
 
