@@ -7,7 +7,7 @@
                         <div class="hero_content_wrapper_2">
                             <div class="hero_content_2">
                                 <span><?php echo get_theme_mod('stb_main_page_hero_slide_1_title_setting');?><br>
-                                    LED-ШАР-standard-3.5-E27-3000</span>
+                                    LED-ШАР-scctandard-3.5-E27-3000</span>
                                     <div class="desc">
                                     </div>
                                 <a class="button" href="<?php echo get_theme_mod('stb_main_page_hero_slide_link_1_setting');?>">подробнее</a>
