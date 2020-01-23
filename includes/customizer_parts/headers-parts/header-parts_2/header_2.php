@@ -1,11 +1,26 @@
 <?php
-//  Header 2 section
+
 $wp_customize->add_section('stb_header_2_section', array(
     'title' => __('STB Header 2 Settings', 'stb'),
     'prioryty' => 15,
     'panel'=>'stb_headers_panel'
 ));
 //End section************************************************************************************************************
+
+//  Header 2 bgc color settings
+$wp_customize->add_setting('stb_header_2_bgc_color_setting', array(
+    'default' =>'',
+    'transport' =>'refresh'
+));
+
+$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'stb_header_2_top_header_color_control',
+        array(
+            'label'  => __('Top Header Text Color','stb'),
+            'section' => 'stb_header_2_section',
+            'settings' => 'stb_header_2_bgc_color_setting',
+        )
+    )
+);
 
 //  Header 2 top header color settings
 $wp_customize->add_setting('stb_header_2_top_header_color_setting', array(

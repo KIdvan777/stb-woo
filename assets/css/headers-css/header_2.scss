@@ -78,7 +78,6 @@
                             left: 40%;
                         }
                     }
-
                 }
             }
         }
@@ -89,6 +88,7 @@
         color:$main_text;
         align-items: center;
         padding-right: 15px;
+        background-color: rgba(255, 255, 255, 1);
         box-shadow: 0px 4px 14px 0px rgba(187,187,187,0.75);
         .main_menu{
             .menu_ul{

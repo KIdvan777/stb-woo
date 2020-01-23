@@ -96,15 +96,6 @@
                                 get_template_part('template-parts/template-headers/woo-menus/menu_2');
                             endif;
                         ?>
-                        <!-- <div class="main_menu_2">
-                            <ul class="menu_ul_2">
-                                <li>COMPANY</li>
-                                <li>PRODUCTS</li>
-                                <li>BUY</li>
-                                <li>SUPPORT</li>
-                                <li>CONTACTS</li>
-                            </ul>
-                        </div> -->
                         <div class="header_2_search">
                             <?php get_search_form(); ?>
                         </div>

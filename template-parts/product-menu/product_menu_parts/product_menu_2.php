@@ -3,9 +3,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 product_menu_2_container">
-                    <!-- <div class="our_services">
-                        our services
-                    </div> -->
+                    <div class="our_services">
+                        Наши услуги
+                    </div>
                     <div class="product_menu_2">
                         <?php
                             $terms = get_terms( 'print_cat' );

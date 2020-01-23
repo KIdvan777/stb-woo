@@ -433,7 +433,9 @@ jQuery(function ($) {
       autoplay: false,
       slidesPerRow: 3,
       slidesToScroll: 1,
-      speed: 600
+      speed: 600,
+      prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-double-right"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-double-left"></i></button>'
     });
   });
   $(document).ready(function () {
