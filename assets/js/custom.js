@@ -447,3 +447,13 @@ jQuery(function ($) {
     });
   });
 });
+"use strict";
+
+jQuery(function ($) {
+  $('#stb_hero_2_slide_1_button').click(function () {
+    $('#customize-control-stb_main_page_hero_slide_1_title_control, #customize-control-stb_main_page_hero_slide_1_description_control, #customize-control-stb_main_page_hero_slide_1_description_text_color_control, #customize-control-stb_main_page_hero_slide_1_link_control, #customize-control-stb_main_page_hero_slide_bgc_color_control, #customize-control-stb_hero_image_1_control').slideToggle();
+  });
+  $('#stb_hero_2_slide_2_button').click(function () {
+    $('#customize-control-stb_main_page_hero_slide_2_title_control, #customize-control-stb_main_page_hero_slide_2_description_control, #customize-control-stb_main_page_hero_slide_2_description_text_color_control, #customize-control-stb_main_page_hero_slide_2_link_control, #customize-control-stb_main_page_hero_slide_2_bgc_color_control, #customize-control-stb_hero_image_2_control').slideToggle();
+  });
+});

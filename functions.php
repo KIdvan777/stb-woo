@@ -65,9 +65,11 @@ if ( class_exists( 'WooCommerce' ) ) {
 // Setup
 
 // Includes
-include(get_template_directory() . '/includes/Classes/Class_ToogleButton.php');
+include(get_template_directory() . '/includes/Classes/Class_ToggleButton_Setup.php');
+include(get_template_directory() . '/includes/Classes/Class_ToggleButton.php');
+include(get_template_directory() . '/includes/Classes/Class_ToggleButton_2.php');
 include(get_template_directory() . '/includes/Classes/Class_Textarea.php');
-include( get_template_directory() . '/includes/theme-customizer.php');
+include(get_template_directory() . '/includes/theme-customizer.php');
 include(get_template_directory() . '/includes/customizer_functions/hero_1.php');
 include(get_template_directory() . '/includes/customizer_functions/header_1_woo.php');
 include(get_template_directory() . '/includes/customizer_functions/product_menu_2.php');
