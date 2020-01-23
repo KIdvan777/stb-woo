@@ -7,7 +7,7 @@ $wp_customize->add_setting('stb_main_page_hero_slide_1_title_setting', array(
 
 $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'stb_main_page_hero_slide_1_title_control',
         array(
-            'label'  => __('Title','stb'),
+            'label'  => __('Заголовок','stb'),
             'section' => 'main_page_hero_section',
             'settings' => 'stb_main_page_hero_slide_1_title_setting',
             'type' => 'text'
@@ -15,22 +15,37 @@ $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'stb_main_p
         )
     )
 );
+
 // Hero slider 1 description
 $wp_customize->add_setting('stb_main_page_hero_slide_1_description_setting', array(
     'default' =>'',
     'transport' =>'refresh'
 ));
 
-$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'stb_main_page_hero_slide_1_description_control',
+$wp_customize->add_control( new WP_Customize_Textarea_Control( $wp_customize, 'stb_main_page_hero_slide_1_description_control',
         array(
-            'label'  => __('Description','stb'),
+            'label'  => __('Описание','stb'),
             'section' => 'main_page_hero_section',
             'settings' => 'stb_main_page_hero_slide_1_description_setting',
-            'type' => 'text'
-
         )
     )
 );
+
+// Hero Slider 1 description text color setting
+$wp_customize->add_setting('stb_main_page_hero_slide_1_description_text_color_setting', array(
+    'default' =>'',
+    'transport' =>'refresh'
+));
+
+$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'stb_main_page_hero_slide_1_description_text_color_control',
+        array(
+            'label'  => __('Цвет текста описания','stb'),
+            'section' => 'main_page_hero_section',
+            'settings' => 'stb_main_page_hero_slide_1_description_text_color_setting',
+        )
+    )
+);
+
 // Hero slider 1 button text & link
 $wp_customize->add_setting('stb_main_page_hero_slide_link_1_setting', array(
     'default' =>'',
@@ -39,7 +54,7 @@ $wp_customize->add_setting('stb_main_page_hero_slide_link_1_setting', array(
 
 $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'stb_main_page_hero_slide_1_link_control',
         array(
-            'label'  => __('Link','stb'),
+            'label'  => __('Ссылка кнопки','stb'),
             'section' => 'main_page_hero_section',
             'settings' => 'stb_main_page_hero_slide_link_1_setting',
             'type' => 'text'
@@ -47,6 +62,7 @@ $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'stb_main_p
         )
     )
 );
+
 // Hero slider 1 background color
 $wp_customize->add_setting('stb_main_page_hero_slide_bgc_color_setting', array(
     'default' =>'',
@@ -61,6 +77,7 @@ $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'stb_
         )
     )
 );
+
 // Hero slider 1 background gradient
 
 // Hero slider 1 background image

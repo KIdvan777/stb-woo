@@ -356,7 +356,7 @@ jQuery(document).ready(function () {
     items: 1,
     loop: true,
     nav: true,
-    navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+    navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>'],
     dots: true,
     autoplay: false
   });

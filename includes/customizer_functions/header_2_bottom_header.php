@@ -49,3 +49,18 @@ function stb_bottom_header_text_color()
     </style>
 <?
 }
+
+add_action('wp_head', 'stb_header_2_backgrond');
+function stb_header_2_backgrond()
+{
+
+?>
+    <style media="screen">
+    .header_2 {
+        background:
+        linear-gradient(<?php echo get_theme_mod('stb_header_2_bgc_gradient_angle_setting') . deg; ?>, rgba(<?php echo get_theme_mod('stb_header_2_bgc_gradient_value_1_setting'); ?>) 0%, rgba(<?php echo get_theme_mod('stb_header_2_bgc_gradient_value_2_setting'); ?>) 100%);
+    }
+    </style>
+<?;
+
+}

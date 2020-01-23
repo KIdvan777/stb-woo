@@ -124,3 +124,15 @@ $cat = new WP_Query(array(
 
 <?
 get_footer();
+if( get_theme_mod('stb_header_2_bgc_triger_control') == 'grad' ){
+?>
+<style media="screen">
+.header_2 {
+    background-color:
+    linear-gradient(
+        <?php echo get_theme_mod('stb_header_2_bgc_gradient_angle_control') . deg; ?>,
+        <?php echo get_theme_mod('stb_header_2_bgc_gradient_value_1_setting'); ?> 0%,
+        <?php echo get_theme_mod('stb_header_2_bgc_gradient_value_2_setting'); ?> 100%);
+}
+</style>
+<?};

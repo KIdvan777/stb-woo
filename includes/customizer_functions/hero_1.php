@@ -15,3 +15,15 @@ function print_hero_1_bgc_gradient()
     </style>
 <?
 }
+
+add_action('wp_head', 'print_hero_1_slide_1_description_text_color');
+function print_hero_1_slide_1_description_text_color()
+{
+?>
+    <style media="screen">
+    .hero_background_2 .hero_2 .hero_content_wrapper_2 .hero_content_2 .hero_content_2_description{
+        color:<?php echo get_theme_mod('stb_main_page_hero_slide_1_description_text_color_setting')?>;
+    }
+    </style>
+<?
+}

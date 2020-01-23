@@ -26,3 +26,19 @@ $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'stb_hero_c
         )
     )
 );
+
+$wp_customize->add_setting('main_page_hero_choices_button_setting', array(
+    'default' =>'',
+    'transport' =>'refresh'
+));
+
+// Hero section Choices
+$wp_customize->add_control( new WP_Customize_Toogle_Button_Control( $wp_customize, 'main_page_hero_choices_button_control',
+        array(
+            'label'  => __('Hero  Button','stb'),
+            'section' => 'main_page_hero_section',
+            'settings' => 'main_page_hero_choices_button_setting',
+
+        )
+    )
+);
