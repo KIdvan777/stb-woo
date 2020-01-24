@@ -7,12 +7,20 @@
                         <!-- TOP HEADER -->
                         <div class="top_header_2_left_content flex">
                             <div class="email">
-                                <i class="fas fa-envelope"></i>
+                                <?php
+                                if( get_theme_mod('stb_header_2_email_icon_settings') )
+                                {
+                                    echo get_theme_mod('stb_header_2_email_icon_settings');
+                                }
+                                else{?>
+                                    <i class="fas fa-envelope"></i>
+                                <?}
+                                 ?>
                                 <span>
                                     <?php
-                                    if( get_theme_mod('stb_header_4_email_settings') )
+                                    if( get_theme_mod('stb_header_2_email_settings') )
                                     {
-                                        echo get_theme_mod('stb_header_4_email_settings');
+                                        echo get_theme_mod('stb_header_2_email_settings');
                                     }
                                     else{
                                         echo 'your email address';
@@ -22,8 +30,8 @@
                             </div>
                             <div class="phone">
                                 <?php
-                                if( get_theme_mod('stb_header_4_phone_icon_settings') ){
-                                    echo get_theme_mod('stb_header_4_phone_icon_settings');
+                                if( get_theme_mod('stb_header_2_phone_icon_settings') ){
+                                    echo get_theme_mod('stb_header_2_phone_icon_settings');
                                 }else{
                                     ?>
                                         <i class="fas fa-phone-alt"></i>
@@ -32,9 +40,9 @@
                                 ?>
                                 <span>
                                     <?php
-                                    if( get_theme_mod('stb_header_4_phone_number_settings') )
+                                    if( get_theme_mod('stb_header_2_phone_number_settings') )
                                     {
-                                        echo get_theme_mod('stb_header_4_phone_number_settings');
+                                        echo get_theme_mod('stb_header_2_phone_number_settings');
                                     }
                                     else{
                                         echo 'your phone number';
@@ -53,6 +61,12 @@
                                         </a>
                                         <a href="<?php echo get_theme_mod('stb_header_2_top_header_social_2_setting'); ?>">
                                             <img src="<?php echo get_theme_mod('stb_header_2_top_header_social_image_2_setting'); ?>" alt="">
+                                        </a>
+                                        <a href="<?php echo get_theme_mod('stb_header_2_top_header_social_3_setting'); ?>">
+                                            <img src="<?php echo get_theme_mod('stb_header_2_top_header_social_image_3_setting'); ?>" alt="">
+                                        </a>
+                                        <a href="<?php echo get_theme_mod('stb_header_2_top_header_social_4_setting'); ?>">
+                                            <img src="<?php echo get_theme_mod('stb_header_2_top_header_social_image_4_setting'); ?>" alt="">
                                         </a>
                                     <?}
                                  ?>
