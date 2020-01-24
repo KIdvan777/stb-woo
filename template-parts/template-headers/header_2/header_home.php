@@ -74,15 +74,31 @@
                         </div>
                         <div class="middle_header_right_content">
                             <div class="shop_icons flex">
-                                <div class="login">
-                                    <i class="fas fa-lock"></i>
-                                </div>
-                                <!-- Function that displays cart link -->
-                                <div class="shop_cart">
-                                    <?php
-                                    	stb_woocommerce_cart_link();
-                                    ?>
-                                </div>
+                                <?php
+                                    if( get_theme_mod('stb_header_2_middle_choices_settings') == 'call')
+                                    {?>
+                                        <span class="get_call">Заказать звонок</span>
+                                        <img src="<?php echo get_theme_mod('stb_header_2_middle_call_button_settings');?>" alt="">
+
+                                    <?}
+                                    else
+                                    {
+                                        ?>
+                                            <!-- <div class="call_saul">
+                                                icon
+                                            </div> -->
+                                            <div class="login">
+                                                <i class="fas fa-lock"></i>
+                                            </div>
+                                            <!-- Function that displays cart link -->
+                                            <div class="shop_cart">
+                                                <?php
+                                                    stb_woocommerce_cart_link();
+                                                ?>
+                                            </div>
+                                        <?
+                                    }
+                                ?>
                                 <!-- end -->
                             </div>
                         </div>
@@ -96,9 +112,12 @@
                                 get_template_part('template-parts/template-headers/woo-menus/menu_2');
                             endif;
                         ?>
-                        <div class="header_2_search">
-                            <?php get_search_form(); ?>
+                        <div class="search_icon search_icon_2">
+                            найти <i class="fas fa-search"></i>
                         </div>
+
+                        <?php get_search_form(); ?>
+
                     </div>
                 </div>
             </div>

@@ -9,6 +9,7 @@
                     <div class="product_menu_2">
                         <?php
                             $terms = get_terms( 'print_cat' );
+                            // pr($terms);
                                 if( $terms && ! is_wp_error($terms) ){
                                     foreach( $terms as $term ){?>
                                         <?php
@@ -26,7 +27,6 @@
                                                         endif;
                                                     ?>
                                                     <span><?php echo $term->name ?></span>
-
                                                </a>
                                            </div>
                                     <?}
