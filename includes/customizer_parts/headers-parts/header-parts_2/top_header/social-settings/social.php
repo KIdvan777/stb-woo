@@ -1,4 +1,18 @@
 <?php
+$wp_customize->add_setting('stb_header_2_top_header_social_button_setting', array(
+    'default' => '',
+    'transport' =>'refresh'
+));
+
+$wp_customize->add_control( new WP_Customize_Toggle_Button_H2_Social_Control( $wp_customize, 'stb_header_2_top_header_social_button_setting',
+        array(
+            'label'  => __('Настройки соц. ссылок','stb'),
+            'section' => 'stb_header_2_section',
+            'settings' => 'stb_header_2_top_header_social_button_setting',
+        )
+    )
+);
+
 $wp_customize->add_setting('stb_header_2_top_header_social_display_triger_setting', array(
     'default' => '',
     'transport' =>'refresh'
@@ -59,7 +73,8 @@ $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'stb_header
             'settings' => 'stb_header_2_top_header_social_1_triger_setting',
             'type' => 'radio',
             'choices' => array(
-                'ok' => 'ok'
+                'ok' => 'да',
+                'no' => 'нет'
             )
         )
     )

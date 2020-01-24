@@ -59,7 +59,7 @@
         }
         .middle_header_right_content{
             .shop_icons{
-                .shop_cart, .login{
+                .shop_cart, .login,{
                     margin-left: 20px;
                     i{
                         position: relative;
@@ -78,6 +78,10 @@
                             left: 40%;
                         }
                     }
+                }
+                .get_call{
+                    margin: auto;
+                    margin-right: 10px;
                 }
             }
         }

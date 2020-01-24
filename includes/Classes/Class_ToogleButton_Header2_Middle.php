@@ -11,10 +11,10 @@ if( class_exists( 'WP_Customize_Control' ) ):
 		<script type="text/javascript">
 
 			jQuery(function($){
-				$('#customize-control-stb_header_2_middle_call_button_control, #customize-control-stb_header_2_middle_choices_control').hide();
+				$('#customize-control-stb_header_2_middle_call_button_control, #customize-control-stb_header_2_top_header_logo_color_control, #customize-control-stb_header_2_middle_header_right_icons_control, #customize-control-stb_header_2_middle_choices_control').hide();
 
 				$('#stb_header_2_middle_button').click(function(){
-					$('#customize-control-stb_header_2_middle_call_button_control, #customize-control-stb_header_2_middle_choices_control'
+					$('#customize-control-stb_header_2_middle_call_button_control, #customize-control-stb_header_2_top_header_logo_color_control, #customize-control-stb_header_2_middle_header_right_icons_control, #customize-control-stb_header_2_middle_choices_control'
 					).slideToggle();
 				});
 			});

@@ -155,6 +155,7 @@ ul{padding:0;margin:0}
 .header_2 .middle_header_2 .middle_header_right_content .shop_icons .shop_cart,.header_2 .middle_header_2 .middle_header_right_content .shop_icons .login{margin-left:20px}
 .header_2 .middle_header_2 .middle_header_right_content .shop_icons .shop_cart i,.header_2 .middle_header_2 .middle_header_right_content .shop_icons .login i{position:relative;color:#666464}
 .header_2 .middle_header_2 .middle_header_right_content .shop_icons .shop_cart i span,.header_2 .middle_header_2 .middle_header_right_content .shop_icons .login i span{width:15px;height:15px;background-color:#77af3a;color:#fff;text-align:center;border-radius:50%;border:1px solid #fff;font-size:14px;position:absolute;top:-60%;left:40%}
+.header_2 .middle_header_2 .middle_header_right_content .shop_icons .get_call{margin:auto;margin-right:10px}
 .header_2 .header_botttom_2{margin:0;border:0;color:#666464;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-right:15px;background-color:white;-webkit-box-shadow:0 4px 14px 0 rgba(187,187,187,0.75);box-shadow:0 4px 14px 0 rgba(187,187,187,0.75)}
 .header_2 .header_botttom_2 .main_menu .menu_ul{padding-top:10px;padding-bottom:10px}
 .header_2 .header_botttom_2 .main_menu .menu_ul .menu-item{padding-top:10px;padding-bottom:10px;margin-left:15px}

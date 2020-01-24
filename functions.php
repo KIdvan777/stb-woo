@@ -69,6 +69,7 @@ include(get_template_directory() . '/includes/Classes/Class_ToggleButton_Setup.p
 include(get_template_directory() . '/includes/Classes/Class_ToggleButton.php');
 include(get_template_directory() . '/includes/Classes/Class_ToggleButton_2.php');
 include(get_template_directory() . '/includes/Classes/Class_Textarea.php');
+include(get_template_directory() . '/includes/Classes/Class_ToogleButton_Header2_Social.php');
 include(get_template_directory() . '/includes/Classes/Class_ToogleButton_Header2_Top.php');
 include(get_template_directory() . '/includes/Classes/Class_ToogleButton_Header2_Middle.php');
 include(get_template_directory() . '/includes/Classes/Class_ToogleButton_Header2_Bottom.php');
