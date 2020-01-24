@@ -1,5 +1,19 @@
 <?php
+$wp_customize->add_setting('stb_header_2_top_header_button_setting', array(
+    'transport' =>'refresh'
+));
+
+$wp_customize->add_control( new WP_Customize_Toggle_Button_H2_Top_Control( $wp_customize, 'stb_header_2_top_header_button_control',
+        array(
+            'label'  => __('Верхний хэдер','stb'),
+            'section' => 'stb_header_2_section',
+            'settings' => 'stb_header_2_top_header_button_setting',
+        )
+    )
+);
 // Social Icons
+// Bottom header
+
 
 //  Header 2 bgc color settings
 $wp_customize->add_setting('stb_header_2_bgc_color_setting', array(
@@ -77,3 +91,4 @@ $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'stb_
         )
     )
 );
+include( get_template_directory() . '/includes/customizer_parts/headers-parts/header-parts_2/top_header/social-settings/social.php' );

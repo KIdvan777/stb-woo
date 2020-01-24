@@ -45,12 +45,17 @@
                         </div>
                         <div class="top_header_2_right_content flex">
                             <div class="currency">
-                                <i class="fas fa-globe"></i>
-                                <span>currency</span>
-                            </div>
-                            <div class="lang">
-                                <i class="fas fa-globe"></i>
-                                <span>lang</span>
+                                <?php
+                                    if(get_theme_mod('stb_header_2_top_header_social_display_triger_setting') == 'ok')
+                                    {?>
+                                        <a href="<?php echo get_theme_mod('stb_header_2_top_header_social_1_setting'); ?>">
+                                            <img src="<?php echo get_theme_mod('stb_header_2_top_header_social_image_1_setting'); ?>" alt="">
+                                        </a>
+                                        <a href="<?php echo get_theme_mod('stb_header_2_top_header_social_2_setting'); ?>">
+                                            <img src="<?php echo get_theme_mod('stb_header_2_top_header_social_image_2_setting'); ?>" alt="">
+                                        </a>
+                                    <?}
+                                 ?>
                             </div>
                         </div>
                     </div>

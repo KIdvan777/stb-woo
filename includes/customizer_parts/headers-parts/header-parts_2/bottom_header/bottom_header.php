@@ -1,5 +1,16 @@
 <?php
+$wp_customize->add_setting('stb_header_2_bottom_header_button_setting', array(
+    'transport' =>'refresh'
+));
 
+$wp_customize->add_control( new WP_Customize_Toggle_Button_H2_Bottom_Control( $wp_customize, 'stb_header_2_bottom_header_button_control',
+        array(
+            'label'  => __('Нижний хэдер','stb'),
+            'section' => 'stb_header_2_section',
+            'settings' => 'stb_header_2_bottom_header_button_setting',
+        )
+    )
+);
 //  Header 2 bottom bgc header color settings
 $wp_customize->add_setting('stb_header_2_bottom_header_bgc_color_setting', array(
     'default' =>'#fff',
