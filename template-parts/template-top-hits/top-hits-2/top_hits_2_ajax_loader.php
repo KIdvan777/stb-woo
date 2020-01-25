@@ -1,14 +1,3 @@
-<?php
-
-    $some_cat = get_theme_mod('top_hits_2_terms_filter_setting');
-    $some_cat1 = get_theme_mod('top_hits_2_terms_filter2_setting');
-    $cats = array();
-    array_push($cats, $some_cat, $some_cat1);
-    pr($cats);
-    foreach ($cats as $cat) {
-        echo $cat;
-    }
-?>
 <section class="top_hits_2_section">
     <div class="container">
         <div class="row">
@@ -22,9 +11,13 @@
                 <div class="top_hits_2_header_buttons flex">
                     <ul class="top_hits_2_header_list flex">
                         <?php
-                            $print_services_cats = get_terms('print_cat');
-                            // pr($print_services_cats);
-                            foreach($print_services_cats as $print_service): ?>
+                            $print_services_cats_id = get_theme_mod('top_hits_2_terms_filter_setting');
+                            $args = array(
+                                'term_taxonomy_id' => $print_services_cats_id
+                            );
+                            $print_services = get_terms($args);
+
+                            foreach($print_services as $print_service): ?>
                                 <li class="top_hits_2_header_list_item">
                                     <?php echo $print_service->name; ?>
                                 </li>
@@ -36,7 +29,7 @@
                     <?php
                         $print_cat_query = new WP_Query(array(
                             'post_type'=>'print_service',
-
+                            'posts_per_page' => '4'
                         ));
 
                         if ( $print_cat_query->have_posts() ) : while ( $print_cat_query->have_posts() ) : $print_cat_query->the_post(); ?>

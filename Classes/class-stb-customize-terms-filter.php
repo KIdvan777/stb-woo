@@ -7,7 +7,7 @@ if( class_exists( 'WP_Customize_Control' ) ):
 
 			<label>
 				<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-				<select <?php $this->link(); ?>>
+				<select <?php $this->link();?> multiple >
 	            <?php
 					$terms = get_terms();
 	              	foreach( $terms as $term ):

@@ -41,17 +41,3 @@ $wp_customize->add_control( new STB_Customize_Terms_Filter_Control( $wp_customiz
         )
     )
 );
-
-$wp_customize->add_setting('top_hits_2_terms_filter2_setting', array(
-    'default' =>'top_hits 1',
-    'transport' =>'refresh'
-));
-// Hero section Choices
-$wp_customize->add_control( new STB_Customize_Terms_Filter_Control( $wp_customize, 'top_hits_2_terms_filter2_control',
-        array(
-            'label'  => __('Top Hits filter By Terms','stb'),
-            'section' => 'top_hits_menu_section',
-            'settings' => 'top_hits_2_terms_filter2_setting',
-        )
-    )
-);
