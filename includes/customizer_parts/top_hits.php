@@ -30,3 +30,4 @@ $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'stb_main_p
         )
     )
 );
+include( get_template_directory() . '/includes/customizer_parts/top-hits-parts/top-hits-2/top_hits_2_filter.php' );

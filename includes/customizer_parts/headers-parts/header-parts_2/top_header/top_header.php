@@ -59,7 +59,7 @@ $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'stb_header
         )
     )
 );
-// Phone icon settings
+// Phone 1 icon settings
 $wp_customize->add_setting('stb_header_2_phone_icon_settings', array(
     'default' =>'<i class="fas fa-phone-alt"></i>',
     'transport' =>'refresh'
@@ -75,7 +75,7 @@ $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'stb_header
     )
 );
 
-//  Phone icon color settings
+//  Phone 1 icon color settings
 $wp_customize->add_setting('stb_header_2_phone_icon_color_settings', array(
     'default' =>'#fff',
     'transport' =>'refresh'
@@ -90,7 +90,7 @@ $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'stb_
     )
 );
 
-// Phone Number setting
+// Phone 1 Number setting
 $wp_customize->add_setting('stb_header_2_phone_number_settings', array(
     'default' =>'',
     'transport' =>'refresh'
@@ -105,7 +105,52 @@ $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'stb_header
         )
     )
 );
+// Phone 2 icon settings
+$wp_customize->add_setting('stb_header_2_phone_icon_2_settings', array(
+    'default' =>'<i class="fas fa-phone-alt"></i>',
+    'transport' =>'refresh'
+));
 
+$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'stb_header_2_phone_icon_2_control',
+        array(
+            'label'  => __('Phone font-awesome icon','stb'),
+            'section' => 'stb_header_2_section',
+            'settings' => 'stb_header_2_phone_icon_2_settings',
+            'type' => 'text'
+        )
+    )
+);
+
+//  Phone 2 icon color settings
+$wp_customize->add_setting('stb_header_2_phone_icon_2_color_settings', array(
+    'default' =>'#fff',
+    'transport' =>'refresh'
+));
+
+$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'stb_header_2_phone_icon_2_color_control',
+        array(
+            'label'  => __('Phone font-awesome icon color','stb'),
+            'section' => 'stb_header_2_section',
+            'settings' => 'stb_header_2_phone_icon_2_color_settings',
+        )
+    )
+);
+
+// Phone 2 Number setting
+$wp_customize->add_setting('stb_header_2_phone_number_2_settings', array(
+    'default' =>'',
+    'transport' =>'refresh'
+));
+
+$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'stb_header_2_phone_number_2_control',
+        array(
+            'label'  => __('Phone number','stb'),
+            'section' => 'stb_header_2_section',
+            'settings' => 'stb_header_2_phone_number_2_settings',
+            'type' => 'text'
+        )
+    )
+);
 //  Header 2 top header color settings
 $wp_customize->add_setting('stb_header_2_top_header_color_setting', array(
     'default' =>'',

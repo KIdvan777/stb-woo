@@ -65,19 +65,23 @@ if ( class_exists( 'WooCommerce' ) ) {
 // Setup
 
 // Includes
-include(get_template_directory() . '/includes/Classes/Class_ToggleButton_Setup.php');
-include(get_template_directory() . '/includes/Classes/Class_ToggleButton.php');
-include(get_template_directory() . '/includes/Classes/Class_ToggleButton_2.php');
-include(get_template_directory() . '/includes/Classes/Class_Textarea.php');
-include(get_template_directory() . '/includes/Classes/Class_ToogleButton_Header2_Social.php');
-include(get_template_directory() . '/includes/Classes/Class_ToogleButton_Header2_Top.php');
-include(get_template_directory() . '/includes/Classes/Class_ToogleButton_Header2_Middle.php');
-include(get_template_directory() . '/includes/Classes/Class_ToogleButton_Header2_Bottom.php');
-include(get_template_directory() . '/includes/theme-customizer.php');
-include(get_template_directory() . '/includes/customizer_functions/hero_1.php');
-include(get_template_directory() . '/includes/customizer_functions/header_1_woo.php');
-include(get_template_directory() . '/includes/customizer_functions/product_menu_2.php');
-include(get_template_directory() . '/includes/customizer_functions/header_2_bottom_header.php');
+// Classes
+include( get_template_directory() . '/Classes/class-stb-customize-post-type-filter.php' );
+include( get_template_directory() . '/Classes/class-stb-customize-taxonomy-filter.php' );
+include( get_template_directory() . '/Classes/class-stb-customize-terms-filter.php' );
+include( get_template_directory() . '/includes/Classes/Class_ToggleButton_Setup.php');
+include( get_template_directory() . '/includes/Classes/Class_ToggleButton.php');
+include( get_template_directory() . '/includes/Classes/Class_ToggleButton_2.php');
+include( get_template_directory() . '/includes/Classes/Class_Textarea.php');
+include( get_template_directory() . '/includes/Classes/Class_ToogleButton_Header2_Social.php');
+include( get_template_directory() . '/includes/Classes/Class_ToogleButton_Header2_Top.php');
+include( get_template_directory() . '/includes/Classes/Class_ToogleButton_Header2_Middle.php');
+include( get_template_directory() . '/includes/Classes/Class_ToogleButton_Header2_Bottom.php');
+include( get_template_directory() . '/includes/theme-customizer.php');
+include( get_template_directory() . '/includes/customizer_functions/hero_1.php');
+include( get_template_directory() . '/includes/customizer_functions/header_1_woo.php');
+include( get_template_directory() . '/includes/customizer_functions/product_menu_2.php');
+include( get_template_directory() . '/includes/customizer_functions/header_2_bottom_header.php');
 // Hooks
 
 
