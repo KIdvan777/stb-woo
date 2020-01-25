@@ -1,3 +1,14 @@
+<?php
+
+    $some_cat = get_theme_mod('top_hits_2_terms_filter_setting');
+    $some_cat1 = get_theme_mod('top_hits_2_terms_filter2_setting');
+    $cats = array();
+    array_push($cats, $some_cat, $some_cat1);
+    pr($cats);
+    foreach ($cats as $cat) {
+        echo $cat;
+    }
+?>
 <section class="top_hits_2_section">
     <div class="container">
         <div class="row">
