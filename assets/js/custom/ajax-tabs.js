@@ -1,5 +1,5 @@
 jQuery(function($){
-    $('.top_hits_2_header_list').click(function(e) {
+    $('#top_hits_2_header_list').click(function(e) {
         var printCatName = e.target.innerText;
 
 

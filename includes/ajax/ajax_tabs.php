@@ -33,9 +33,11 @@ function stb_tabs_ajax_action_callback(){
              while($query_ajax_tabs->have_posts()){
                  $query_ajax_tabs->the_post();
                  ?>
-                     <a href="<?php the_permalink(); ?>" class="col-md-3">
-                         <?php the_post_thumbnail(); ?>
-                         <?php the_title(); ?>
+                     <a href="<?php the_permalink(); ?>" class=" top_hits_item_2 col-md-3">
+                         <div class="top_hits_item__img_2">
+                             <?php the_post_thumbnail(); ?>
+                         </div>
+                         <h2><?php the_title(); ?></h2>
                      </a>
                  <?php
              }
